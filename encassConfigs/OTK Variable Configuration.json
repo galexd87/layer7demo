@@ -1,0 +1,233 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fd2da",
+  "guid": "2e6e2ef3-a36f-4548-a2c4-7b369b7ae184",
+  "name": "OTK Variable Configuration",
+  "checksum": "f759aef7cb881204f454d95c2c238dfdbc2c871a",
+  "description": "Exports variables that are required to process OAuth requests.",
+  "policyName": "OTK Variable Configuration",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "access_token_enable_jwt",
+      "type": "STRING"
+    },
+    {
+      "name": "allow_insecure_oauth_params",
+      "type": "STRING"
+    },
+    {
+      "name": "allow_port_agnostic_redirect_uris",
+      "type": "STRING"
+    },
+    {
+      "name": "ciba_token_endpoint_polling_interval_sec",
+      "type": "STRING"
+    },
+    {
+      "name": "client_credential_jwt_cache_lifetime",
+      "type": "STRING"
+    },
+    {
+      "name": "client_secret_lifetime_m",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "enable_anonymous_client_export",
+      "type": "STRING"
+    },
+    {
+      "name": "enable_intended_audience_check",
+      "type": "STRING"
+    },
+    {
+      "name": "enforce_dcr_software_statement",
+      "type": "STRING"
+    },
+    {
+      "name": "export_custom",
+      "type": "STRING"
+    },
+    {
+      "name": "expose_client_secret",
+      "type": "STRING"
+    },
+    {
+      "name": "hashed_secret_algorithm",
+      "type": "STRING"
+    },
+    {
+      "name": "hashed_secret_enable",
+      "type": "STRING"
+    },
+    {
+      "name": "hashed_secret_salt",
+      "type": "STRING"
+    },
+    {
+      "name": "host_oauth2_auth_server",
+      "type": "STRING"
+    },
+    {
+      "name": "host_oauth2_auth_template_server",
+      "type": "STRING"
+    },
+    {
+      "name": "jwks_lookup_cache_lifetime",
+      "type": "STRING"
+    },
+    {
+      "name": "jwks_uri_path",
+      "type": "STRING"
+    },
+    {
+      "name": "location_website_template",
+      "type": "STRING"
+    },
+    {
+      "name": "location_website_template_resources",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_auth_path",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_auth_template_path",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_backchannel_authentication_path",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_device_authorization_path",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_device_verification_path",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_mtls_enable_thumbprint_validation",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_par_authorization_path",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_profile.default",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_server_certificate",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_server_hostname",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_server_port",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_server_url_prefix",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_token_path",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_token_revocation_list_path",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_token_revocation_path",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_token_type",
+      "type": "STRING"
+    },
+    {
+      "name": "oauth2_version",
+      "type": "STRING"
+    },
+    {
+      "name": "oidc_register_path",
+      "type": "STRING"
+    },
+    {
+      "name": "persist_dcr_software_statement",
+      "type": "STRING"
+    },
+    {
+      "name": "request_object_lookup_cache_lifetime",
+      "type": "STRING"
+    },
+    {
+      "name": "service_documentation_path",
+      "type": "STRING"
+    },
+    {
+      "name": "token_endpoint_polling_interval_sec",
+      "type": "STRING"
+    },
+    {
+      "name": "token_revocation_list_enabled",
+      "type": "STRING"
+    },
+    {
+      "name": "userinfo_path",
+      "type": "STRING"
+    },
+    {
+      "name": "usersession_logout_path",
+      "type": "STRING"
+    },
+    {
+      "name": "usersession_status_path",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Configuration"
+    },
+    {
+      "name": "doc_require_customization",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "ServerRegistry.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fdc1a",
+  "guid": "ff973544-9152-4305-8f6e-be5024a40638",
+  "name": "OTK Session Validation",
+  "checksum": "342d35f3297466f39ab03742429f89dfdffd58f4",
+  "description": "Validates a given id_token represented as a JWT. The id_token represents a user session. Optionally it can check the expiration date.",
+  "policyName": "OTK Session Validation",
+  "encassArgs": [
+    {
+      "name": "check_expiration",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Check expiration"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "jwt",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "id_token (JWT)"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Validation"
+    },
+    {
+      "name": "doc_usage",
+      "value": "Internal"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "validate.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

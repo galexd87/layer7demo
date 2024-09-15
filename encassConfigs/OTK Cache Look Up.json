@@ -1,0 +1,74 @@
+{
+  "goid": "161861da3a78c5dcdc62696d16914c21",
+  "guid": "68ad78a1-f4a1-4568-91e1-0980d95c75cd",
+  "name": "OTK Cache Look Up",
+  "checksum": "00b223592b16ffa53c9f27ec8ca37f918041a6e1",
+  "description": "Looks Up an item associated with key: cacheKey in cache with ID: cacheID and returns it in values, if the item exists. ",
+  "policyName": "OTK Cache Look Up",
+  "encassArgs": [
+    {
+      "name": "cacheID",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "The Cache ID (required)"
+    },
+    {
+      "name": "cacheKey",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "The Cache Key (identifier) for this entry (required)"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "maxEntryAge",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Max. entry age in seconds (optional if a default value exists)"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "error.msg",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "lookup16.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

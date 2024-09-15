@@ -1,0 +1,76 @@
+{
+  "goid": "d1bde3d2021a469e82ebf8cac288b71a",
+  "guid": "fd03685d-0d8f-4e50-9514-76ca3861922e",
+  "name": "OTK FIP Client Authentication",
+  "checksum": "7f510dae02a3c0e154b8c1203a1545326901f08d",
+  "description": "Authenticates a client certificate against a configured IDP. Use this encas after 'OTK Require SSL (with Client Certificate)' if it is configured to require a client certificate",
+  "policyName": "OTK FIP Client Authentication",
+  "encassArgs": [
+    {
+      "name": "apiPrefix",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "API prefix for error code"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "error.msg",
+      "type": "STRING"
+    },
+    {
+      "name": "status",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Access_Control"
+    },
+    {
+      "name": "doc_in_apiPrefix",
+      "value": "Configure an API identifier if it should be combined with 'error.code'. Use it to identify a specific API."
+    },
+    {
+      "name": "doc_require_customization",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "user16.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

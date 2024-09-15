@@ -1,0 +1,71 @@
+{
+  "goid": "3f6b5c92ca2ac3665bc7d8780bc4de6b",
+  "guid": "54e0e704-e153-4383-809f-f6a4b6e4261f",
+  "name": "OTK Token Update (user -> request_token)",
+  "checksum": "a7ce43b80d2dc3824dc26ef0ed053cfe1b065072",
+  "description": "This is used with OAuth 1.0. It associates a user with a request_token.",
+  "policyName": "OTK Token Update (user -> request_token)",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "resource_owner",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Resource Owner"
+    },
+    {
+      "name": "token",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Request Token"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Delegate"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "down-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

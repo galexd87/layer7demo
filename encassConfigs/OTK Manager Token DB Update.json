@@ -1,0 +1,91 @@
+{
+  "goid": "ace8cb8325144efc97fea34285da4d36",
+  "guid": "9db1bd8f-5c5d-48bf-acd9-b7f45bf57aac",
+  "name": "OTK Manager Token DB Update",
+  "checksum": "9a264d15d70355afbd00b29b3218febff7ddfb40",
+  "description": "Updates the given token.",
+  "policyName": "OTK Manager Token DB Update",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": false,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "expiration",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": false
+    },
+    {
+      "name": "resource_owner",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": false
+    },
+    {
+      "name": "token",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "token_status",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    },
+    {
+      "name": "verifier",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Access"
+    },
+    {
+      "name": "doc_usage",
+      "value": "Internal"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "Save16.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

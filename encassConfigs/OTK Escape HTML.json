@@ -1,0 +1,37 @@
+{
+  "goid": "264450fc1e6188c99d4574a36c093c26",
+  "guid": "8ec0504a-67af-4087-99a9-e23a92986695",
+  "name": "OTK Escape HTML",
+  "checksum": "4ae614001dccaf582973efeb345ac8ab8c1c747b",
+  "description": "Escapes HTML characters in the input",
+  "policyName": "OTK Escape HTML",
+  "encassArgs": [
+    {
+      "name": "input",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Input"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "escaped_output",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

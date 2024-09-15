@@ -1,0 +1,71 @@
+{
+  "goid": "efc6a765ba66b41f4bb7b1fc58c93c52",
+  "guid": "bac17a37-0b06-47fd-910c-4faced9489c3",
+  "name": "OTK CORS",
+  "checksum": "6c96c9e3abdd1f3e58d56f14cf5e47641f95ae09",
+  "description": "Configure CORS as required, optional or to be ignored. By default OTK uses this assertion at protected API's. If set to 'ignore' CORS will not be handled. OTK sets the variable 'custom' to a JSON structure containing 'key=url_path_query' containing the API path and query components. Default: optional",
+  "policyName": "OTK CORS",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Add any custom parameter"
+    },
+    {
+      "name": "dynamic_origins",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Add any Dynamic Origins"
+    },
+    {
+      "name": "requireCORS",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Require CORS (optional, true, ignore)"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "isCors",
+      "type": "STRING"
+    },
+    {
+      "name": "isPreflight",
+      "type": "STRING"
+    },
+    {
+      "name": "requireCORS",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "ServerRegistry.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "true"
+    }
+  ]
+}

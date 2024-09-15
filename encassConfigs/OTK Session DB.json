@@ -1,0 +1,117 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fdbd8",
+  "guid": "68f18ccd-fd02-46ef-bedc-b431ecbf0368",
+  "name": "OTK Session DB",
+  "checksum": "059b44be0833d144e879bb18f1d4ecfcec1d62c9",
+  "description": "Modifies the session database table depending on the input parameters. This encas should not be used directly. Use the corresponding encas found at the 'manage/session' folder.",
+  "policyName": "OTK Session DB",
+  "encassArgs": [
+    {
+      "name": "cacheAge",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": false
+    },
+    {
+      "name": "cacheId",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    },
+    {
+      "name": "cacheKey",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "cacheMaxEntries",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": false
+    },
+    {
+      "name": "cacheMaxSize",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": false
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": false,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "dbAge",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": false
+    },
+    {
+      "name": "operation",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": false
+    },
+    {
+      "name": "value",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Access"
+    },
+    {
+      "name": "doc_require_customization",
+      "value": "false"
+    },
+    {
+      "name": "doc_usage",
+      "value": "Internal"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "Save16.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

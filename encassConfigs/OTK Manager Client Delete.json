@@ -1,0 +1,64 @@
+{
+  "goid": "f76f2a2a24844be3c0f269b19f06c612",
+  "guid": "601c8753-5f9d-4c10-9eb7-c2dd4c8fde99",
+  "name": "OTK Manager Client Delete",
+  "checksum": "5dcd0e25895f8428ef324829cabaa658d49981af",
+  "description": "Deletes a client registration including all its depending client_key's (client_id/ oauth_consumer_key). Nevertheless, client_key's that have been used MAY still be valid for a configured cache lifetime. For use by OAuth Manager.",
+  "policyName": "OTK Manager Client Delete",
+  "encassArgs": [
+    {
+      "name": "client_ident",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Client Identifier (DB pk)"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Delegate"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "down-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

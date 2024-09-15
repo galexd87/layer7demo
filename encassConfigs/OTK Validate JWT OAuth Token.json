@@ -1,0 +1,70 @@
+{
+  "goid": "d003cc363d3af3fa8c1c0dfed091cd38",
+  "guid": "fce241db-a269-4dfe-adad-7790748c4940",
+  "name": "OTK Validate JWT OAuth Token",
+  "checksum": "6acaec7accd3a458f6ddc4d38d10eab12ed23845",
+  "description": "This encapsulated assertion is used to validate JWT as OAuth Token. Customization to the default implementation can be done in the configuration policy #OTK Validate JWT OAuth Token",
+  "policyName": "OTK Validate JWT OAuth Token",
+  "encassArgs": [
+    {
+      "name": "access_token",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "access_token"
+    },
+    {
+      "name": "access_token_enable_jwt",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "jwt_id",
+      "type": "STRING"
+    },
+    {
+      "name": "query_db",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

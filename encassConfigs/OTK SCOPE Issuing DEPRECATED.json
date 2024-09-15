@@ -1,0 +1,67 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fd225",
+  "guid": "8bf7f25d-2f0d-4743-8c72-a39019f53091",
+  "name": "OTK SCOPE Issuing DEPRECATED",
+  "checksum": "6a3672802588d081768eba3200ac3ff0772c7b6c",
+  "description": "(DEPRECATED USE CUSTOM ASSERTION) Validates the requested SCOPE against SCOPE's that were registered for the client. It only issues SCOPE's that are a subset of the registered ones. It will fail if none match.",
+  "policyName": "OTK SCOPE Issuing DEPRECATED",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "scope.registered",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Permitted SCOPE"
+    },
+    {
+      "name": "scope.requested",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Requested SCOPE"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "scope.granted",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Validation"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

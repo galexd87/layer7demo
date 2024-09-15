@@ -1,0 +1,110 @@
+{
+  "goid": "0ad3d25a48cf4b75c0a6cd208cd40095",
+  "guid": "318bb387-a4ee-4f9c-b4a3-d5536ad49754",
+  "name": "OTK CIBA Backchannel Response",
+  "checksum": "1586d7c9b64c6e063f60c6c75f9c8ad3cecda703",
+  "policyName": "OTK CIBA Backchannel Response",
+  "encassArgs": [
+    {
+      "name": "acr_values",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": false
+    },
+    {
+      "name": "binding_message",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Binding Message"
+    },
+    {
+      "name": "client_key",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Client Key"
+    },
+    {
+      "name": "client_name",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Client Name"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "req_expiration",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "Requested Expiration"
+    },
+    {
+      "name": "resources",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Resources"
+    },
+    {
+      "name": "scope",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Scope"
+    },
+    {
+      "name": "status",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "Status"
+    },
+    {
+      "name": "user_info",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "User Info"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "expires_in",
+      "type": "STRING"
+    },
+    {
+      "name": "user_req_id",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

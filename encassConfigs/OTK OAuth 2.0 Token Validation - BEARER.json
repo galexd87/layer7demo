@@ -1,0 +1,133 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fd322",
+  "guid": "2c8a8e1d-fbcd-4d9a-b866-981d923aeb83",
+  "name": "OTK OAuth 2.0 Token Validation - BEARER",
+  "checksum": "fb010e91ddedf857f661008e88d72f6d085c7426",
+  "description": "Validates a given Bearer token profile access_token.",
+  "policyName": "OTK OAuth 2.0 Token Validation - BEARER",
+  "encassArgs": [
+    {
+      "name": "access_token",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": false
+    },
+    {
+      "name": "access_token_type",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": false
+    },
+    {
+      "name": "any_resource_required",
+      "type": "STRING",
+      "ordinal": 11,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_cert_base64",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": false
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "disable_audience_check",
+      "type": "STRING",
+      "ordinal": 12,
+      "guiPrompt": false
+    },
+    {
+      "name": "onetime",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": false
+    },
+    {
+      "name": "resource_required",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": false
+    },
+    {
+      "name": "scope_fail",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    },
+    {
+      "name": "scope_required",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false
+    },
+    {
+      "name": "tokenValues",
+      "type": "MESSAGE",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Token values"
+    },
+    {
+      "name": "token_cert_thumbprint",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": true,
+      "guiLabel": "Token Certificate Thumbprint"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "artifactVersion",
+      "value": "8cf8496aad6380a24f33889a72ad7bed6d4dfbba"
+    },
+    {
+      "name": "doc_category",
+      "value": "OAuth_Validation"
+    },
+    {
+      "name": "doc_usage",
+      "value": "Internal"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "validate.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

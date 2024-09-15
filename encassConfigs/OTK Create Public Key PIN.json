@@ -1,0 +1,60 @@
+{
+  "goid": "33c21ebb59b7cae5cd069fe74a94555a",
+  "guid": "52c7c0cb-d1c6-4da2-b51b-bba6aabe1e62",
+  "name": "OTK Create Public Key PIN",
+  "checksum": "5bb7bdb04ae86024206a381d5db18e44ec8ea7a6",
+  "description": "Create a Base64Url encoded string representing the sha256 hash of the public key of the certificate that is found in the trusted certificate store identified by the given name.",
+  "policyName": "OTK Create Public Key PIN",
+  "encassArgs": [
+    {
+      "name": "certName",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Certificate Name (Alias)"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "subjectPublicKey",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "artifactVersion",
+      "value": "df2981bd6e1611fef8c001243a7ffa81a5d4b54c"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "transportLayerSecurity"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "ssl.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

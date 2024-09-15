@@ -1,0 +1,12 @@
+{
+  "goid": "5f5ee5e6eebabb324327c7c4b866253f",
+  "guid": "0c3555d8-a040-454b-a4ed-5a8e01fd8146",
+  "name": "OTK RESOURCE Issuing - Extended",
+  "policyType": "FRAGMENT",
+  "checksum": "40e0e011e0c1411d30f809cfe3e5ed59c15c5d90",
+  "folderPath": "/OTK/Policy Fragments/validation - verification",
+  "soap": false,
+  "policy": {
+    "xml": "<wsp:Policy xmlns:L7p=\"http://www.layer7tech.com/ws/policy\" xmlns:wsp=\"http://schemas.xmlsoap.org/ws/2002/12/policy\">\n    <wsp:All wsp:Usage=\"Required\">\n        <L7p:CommentAssertion>\n            <L7p:Comment stringValue=\"Policy Fragment: OTK RESOURCE Issuing - Extended\"/>\n        </L7p:CommentAssertion>\n        <L7p:CommentAssertion>\n            <L7p:Comment stringValue=\"Input: resource.permitted - permitted resources\"/>\n        </L7p:CommentAssertion>\n        <L7p:CommentAssertion>\n            <L7p:Comment stringValue=\"Input: resource.requested - requested resources\"/>\n        </L7p:CommentAssertion>\n        <L7p:CommentAssertion>\n            <L7p:Comment stringValue=\"Output: resource.granted - granted resources\"/>\n        </L7p:CommentAssertion>\n        <L7p:Include>\n            <L7p:PolicyGuid stringValue=\"23f92900-d19d-4929-a8f1-e152f7fd71ea\"/>\n        </L7p:Include>\n    </wsp:All>\n</wsp:Policy>"
+  }
+}

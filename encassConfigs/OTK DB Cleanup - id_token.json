@@ -1,0 +1,28 @@
+{
+  "goid": "b8baffb2056fe577664e34d89972f316",
+  "guid": "022e86bc-1195-42e4-99d0-8262826d5b0a",
+  "name": "OTK DB Cleanup - id_token",
+  "checksum": "6f982e4376f9f35a672e01afb752a3810c745691",
+  "policyName": "OTK DB Cleanup - id_token",
+  "encassArgs": [],
+  "encassResults": [
+    {
+      "name": "status",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

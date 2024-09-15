@@ -1,0 +1,11 @@
+{
+  "goid": "33c21ebb59b7cae5cd069fe74a951e70",
+  "name": "OTK Database Maintenance - id_token",
+  "checksum": "c8226ae8961a5e58440b0f2283bf7a9dc43b7217",
+  "policyName": "OTK Database Maintenance - id_token",
+  "jobType": "RECURRING",
+  "cronExpression": "0 */29 * * * ?",
+  "executeOnSingleNode": true,
+  "executeOnCreation": false,
+  "status": "SCHEDULED"
+}

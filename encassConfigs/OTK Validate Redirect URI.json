@@ -1,0 +1,43 @@
+{
+  "goid": "b20ae41ca2275e8bb1690d8ad22538e6",
+  "guid": "c1a7f28d-0941-4458-8a4b-5198f120fad4",
+  "name": "OTK Validate Redirect URI",
+  "checksum": "324c78045947e2591264f3e58533ac13045b5af7",
+  "policyName": "OTK Validate Redirect URI",
+  "encassArgs": [
+    {
+      "name": "allow_port_agnostic_redirect_uris",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false
+    },
+    {
+      "name": "oauth2_profile",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    },
+    {
+      "name": "redirect_uris",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Redirect URIs"
+    }
+  ],
+  "encassResults": [],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

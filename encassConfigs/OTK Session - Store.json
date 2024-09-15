@@ -1,0 +1,106 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fda84",
+  "guid": "dd360775-0fec-47db-8b45-059d995b262d",
+  "name": "OTK Session - Store",
+  "checksum": "feac0ab3eae3aec12df96da6cb35d7bef201cd3f",
+  "description": "Creates a new session or updates a matching existing one. Use this for temporary values.",
+  "policyName": "OTK Session - Store",
+  "encassArgs": [
+    {
+      "name": "cacheAge",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "Max. age for cache values"
+    },
+    {
+      "name": "cacheId",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Name of cache to be used"
+    },
+    {
+      "name": "cacheKey",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Key for cache entry"
+    },
+    {
+      "name": "cacheMaxEntries",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Max. number of entries"
+    },
+    {
+      "name": "cacheMaxSize",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Max. size of cache"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "dbAge",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Max. database age for entries"
+    },
+    {
+      "name": "value",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Value to be cached"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Delegate"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "down-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

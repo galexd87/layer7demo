@@ -1,0 +1,64 @@
+{
+  "goid": "3f6b5c92ca2ac3665bc7d8780bc4d94a",
+  "guid": "de62a190-b120-4ce3-a958-25a5e09cf949",
+  "name": "OTK Validate Grant Type",
+  "checksum": "0691977da90e091dfef850c981e6f3cddc4a27a0",
+  "description": "Validates a given grant_type against supported ones within this OTK configuration.",
+  "policyName": "OTK Validate Grant Type",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "grant_type",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Grant Type"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "grant_type",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Validation"
+    },
+    {
+      "name": "doc_require_customization",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

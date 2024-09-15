@@ -1,0 +1,113 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fd235",
+  "guid": "0074476e-2de7-4c63-bad3-ef658035dce9",
+  "name": "OTK id_token Persist",
+  "checksum": "f8c9a509ea05ed1d2ee14d23773291dcbdb94ec9",
+  "description": "Registers an id_token for the user. Depending on the configuration the values will be persisted via local database using using 'OTK id_token DB Persist' or via routing assertion to an endpoint that implements the database access.",
+  "policyName": "OTK id_token Persist",
+  "encassArgs": [
+    {
+      "name": "azp",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "Valid Users (azp)"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "iss",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Issuer Identifier"
+    },
+    {
+      "name": "jwt",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "ID_TOKEN"
+    },
+    {
+      "name": "resource_owner",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Resource Owner"
+    },
+    {
+      "name": "salt",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Salt"
+    },
+    {
+      "name": "shared_secret",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Shared Secret"
+    },
+    {
+      "name": "shared_secret_type",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Shared Secret Type"
+    },
+    {
+      "name": "sub",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Subject"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Delegate"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "down-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

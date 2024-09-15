@@ -1,0 +1,64 @@
+{
+  "goid": "3f6b5c92ca2ac3665bc7d8780bc4e69b",
+  "guid": "f51a4463-4159-4aa0-a0f0-2e50433e2cc1",
+  "name": "OTK Token Disable",
+  "checksum": "54a560477f1ae3a57f0f5c4d68875b17b165e249",
+  "description": "Disables tokens issued for given client_key (client_id/ oauth_consumer_key).",
+  "policyName": "OTK Token Disable",
+  "encassArgs": [
+    {
+      "name": "client_key",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Client ID"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Delegate"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "down-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

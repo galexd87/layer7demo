@@ -1,0 +1,108 @@
+{
+  "goid": "cdd667c3870313491b3166e02cfd881f",
+  "guid": "546ac094-0584-4de1-a0c6-e03c0853a98a",
+  "name": "OTK Generate JWT OAuth Token",
+  "checksum": "0ad335f8f1de4b1612cd55c37708b55bbbea40be",
+  "description": "This encapsulated assertion is used to generate JWT as OAuth Token. Customization to the default implementation can be done in the configuration policy #OTK Generate JWT OAuth Token",
+  "policyName": "OTK Generate JWT OAuth Token",
+  "encassArgs": [
+    {
+      "name": "access_token_enable_jwt",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": false
+    },
+    {
+      "name": "act",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": true,
+      "guiLabel": "Actor Claim"
+    },
+    {
+      "name": "aud",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Audience (aud) "
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Custom content"
+    },
+    {
+      "name": "jti",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "JTI (JWT ID) "
+    },
+    {
+      "name": "lifetime",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Lifetime in seconds"
+    },
+    {
+      "name": "mTLS_certificate_thumbprint",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "Certificate Thumprint"
+    },
+    {
+      "name": "resource",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "resource"
+    },
+    {
+      "name": "scope",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Granted SCOPE"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "at_jwt",
+      "type": "STRING"
+    },
+    {
+      "name": "at_jwt_exp",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

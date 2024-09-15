@@ -1,0 +1,204 @@
+{
+  "goid": "3f6b5c92ca2ac3665bc7d8780bc4d8f0",
+  "guid": "2dd2c0ca-6d4f-49fc-8b0a-eae14c10a940",
+  "name": "OTK response_type=TOKEN ID_TOKEN",
+  "checksum": "0707651a5865434ee32bf3414c46316c1aa78d82",
+  "description": "Handles the response_type 'TOKEN ID_TOKEN' defined for OpenID Connect. It also persists the generated access_token - id_token via the 'OTK Token Storage (access_token)' and 'OTK id_token Persist' assertions.",
+  "policyName": "OTK response_type=TOKEN ID_TOKEN",
+  "encassArgs": [
+    {
+      "name": "acr",
+      "type": "STRING",
+      "ordinal": 14,
+      "guiPrompt": true,
+      "guiLabel": "acr level of login process (default: 0)"
+    },
+    {
+      "name": "authTime",
+      "type": "STRING",
+      "ordinal": 15,
+      "guiPrompt": true,
+      "guiLabel": "Time of authentication (default: now in seconds)"
+    },
+    {
+      "name": "azp",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": true,
+      "guiLabel": "Valid id_token users (azp)"
+    },
+    {
+      "name": "client",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Client"
+    },
+    {
+      "name": "client_key",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Client ID"
+    },
+    {
+      "name": "client_key_custom",
+      "type": "STRING",
+      "ordinal": 20,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_name",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Client Name"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 13,
+      "guiPrompt": true,
+      "guiLabel": "JSON with session values"
+    },
+    {
+      "name": "nonce",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "Nonce"
+    },
+    {
+      "name": "redirect_uri",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Redirect URI"
+    },
+    {
+      "name": "resource",
+      "type": "STRING",
+      "ordinal": 17,
+      "guiPrompt": true,
+      "guiLabel": "Audience Information"
+    },
+    {
+      "name": "resource_owner",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Resource Owner"
+    },
+    {
+      "name": "response_mode",
+      "type": "STRING",
+      "ordinal": 16,
+      "guiPrompt": true,
+      "guiLabel": "Response Mode"
+    },
+    {
+      "name": "salt",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": true,
+      "guiLabel": "Salt (for PPID generation)"
+    },
+    {
+      "name": "scope",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "SCOPE"
+    },
+    {
+      "name": "state",
+      "type": "STRING",
+      "ordinal": 18,
+      "guiPrompt": true,
+      "guiLabel": "State"
+    },
+    {
+      "name": "third_party_sso_token",
+      "type": "STRING",
+      "ordinal": 11,
+      "guiPrompt": true,
+      "guiLabel": "[mag] Third Party SSO Token in base64"
+    },
+    {
+      "name": "third_party_sso_token_type",
+      "type": "STRING",
+      "ordinal": 12,
+      "guiPrompt": true,
+      "guiLabel": "[mag] Third Party SSO Token Type"
+    },
+    {
+      "name": "token_rank",
+      "type": "INTEGER",
+      "ordinal": 19,
+      "guiPrompt": false
+    },
+    {
+      "name": "token_status",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "Status (ENABLED|DISABLED)"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "formResp",
+      "type": "STRING"
+    },
+    {
+      "name": "jwtResp",
+      "type": "STRING"
+    },
+    {
+      "name": "location",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "OAuth_Validation"
+    },
+    {
+      "name": "doc_usage",
+      "value": "Internal"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

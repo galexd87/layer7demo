@@ -1,0 +1,125 @@
+{
+  "goid": "f76f2a2a24844be3c0f269b19f06bb04",
+  "guid": "9a0af9b2-d5cb-4043-b376-8e609c9ca426",
+  "name": "OTK Manager Client DB GET",
+  "checksum": "953e87c974e5cdc731c420401781ed8fbf1125b8",
+  "description": "Retrieves client values from the persistence layer for use by the OAuth Manager. To find out how the parameters can by used refer to the OTK API documentation.",
+  "policyName": "OTK Manager Client DB GET",
+  "encassArgs": [
+    {
+      "name": "client_ident",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_key",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 13,
+      "guiPrompt": false,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "dbsystem",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false
+    },
+    {
+      "name": "environment",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": false
+    },
+    {
+      "name": "filterStatus",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": false
+    },
+    {
+      "name": "format",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": false
+    },
+    {
+      "name": "master",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": false
+    },
+    {
+      "name": "name",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": false
+    },
+    {
+      "name": "operation",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": false
+    },
+    {
+      "name": "org",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": false
+    },
+    {
+      "name": "queryOffset",
+      "type": "STRING",
+      "ordinal": 11,
+      "guiPrompt": false
+    },
+    {
+      "name": "registered_by",
+      "type": "STRING",
+      "ordinal": 12,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "Save16.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

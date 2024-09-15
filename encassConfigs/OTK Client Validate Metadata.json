@@ -1,0 +1,41 @@
+{
+  "goid": "3d66f642ad7227adf3d0a80855c84cb9",
+  "guid": "4c6dab79-310f-48bb-9ec1-3f0e511c5093",
+  "name": "OTK Client Validate Metadata",
+  "checksum": "2cbfe477bda4400fdd1178d452c659b908bb4680",
+  "description": "Validates client metadata configured in the client_key_custom",
+  "policyName": "OTK Client Validate Metadata",
+  "encassArgs": [
+    {
+      "name": "client_metadata",
+      "type": "MESSAGE",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": ""
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "error.msg",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

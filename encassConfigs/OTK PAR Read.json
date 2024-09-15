@@ -1,0 +1,54 @@
+{
+  "goid": "44456a7ffb5e659f10fac58b6798d8b2",
+  "guid": "b776a5d6-2c96-47da-bfb3-ba25bdc91f66",
+  "name": "OTK PAR Read",
+  "checksum": "2fe3b6499cecee0a6502de5f9d7de8cba6647cb0",
+  "policyName": "OTK PAR Read",
+  "encassArgs": [
+    {
+      "name": "request_uri",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Request URI"
+    },
+    {
+      "name": "return_json",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

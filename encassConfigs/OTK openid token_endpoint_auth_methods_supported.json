@@ -1,0 +1,55 @@
+{
+  "goid": "c0e51b62151c23e2d21ecaf1117c2854",
+  "guid": "889fb762-51e7-4244-81e4-8eab7393f7de",
+  "name": "OTK openid token_endpoint_auth_methods_supported",
+  "checksum": "76aa581ab26defa1ea1ab7d98b96680656ebd04c",
+  "description": "Supported token_endpoint_auth_methods as specified in the context of OpenID Connect. Defined for the OpenID Connect Discovery api",
+  "policyName": "OTK openid token_endpoint_auth_methods_supported",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "oauth2_profile",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "discovery.endpoint.enabled",
+      "type": "STRING"
+    },
+    {
+      "name": "token_endpoint_auth_methods_supported",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

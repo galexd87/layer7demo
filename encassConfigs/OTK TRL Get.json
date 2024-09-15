@@ -1,0 +1,51 @@
+{
+  "goid": "e70c1ed43fc375f9c8d9ffb0e71cea5e",
+  "guid": "2faae09c-ee5f-499a-85f4-c6e1c0f826d7",
+  "name": "OTK TRL Get",
+  "checksum": "3b84fc9140ee5dce30a261f2de3cc6c9c267eb46",
+  "policyName": "OTK TRL Get",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "MESSAGE"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "Save16.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

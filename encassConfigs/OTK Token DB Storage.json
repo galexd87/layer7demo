@@ -1,0 +1,174 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fcdd8",
+  "guid": "1861c3a9-2698-41be-80d8-92841540e550",
+  "name": "OTK Token DB Storage",
+  "checksum": "0ea6b595a0975361a2a3e364b74bd8ff4593ed88",
+  "description": "Persists the given token.",
+  "policyName": "OTK Token DB Storage",
+  "encassArgs": [
+    {
+      "name": "callback",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "client",
+      "type": "STRING",
+      "ordinal": 15,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_key",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_name",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 14,
+      "guiPrompt": false
+    },
+    {
+      "name": "dbsystem",
+      "type": "STRING",
+      "ordinal": 18,
+      "guiPrompt": false
+    },
+    {
+      "name": "expiration",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": false
+    },
+    {
+      "name": "max_oauth_token_behaviour",
+      "type": "STRING",
+      "ordinal": 17,
+      "guiPrompt": false
+    },
+    {
+      "name": "max_oauth_token_count",
+      "type": "STRING",
+      "ordinal": 16,
+      "guiPrompt": false
+    },
+    {
+      "name": "resource",
+      "type": "STRING",
+      "ordinal": 19,
+      "guiPrompt": false
+    },
+    {
+      "name": "resource_owner",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": false
+    },
+    {
+      "name": "rexpiration",
+      "type": "STRING",
+      "ordinal": 13,
+      "guiPrompt": false
+    },
+    {
+      "name": "rtoken",
+      "type": "STRING",
+      "ordinal": 12,
+      "guiPrompt": false
+    },
+    {
+      "name": "scope",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": false
+    },
+    {
+      "name": "temp_token",
+      "type": "STRING",
+      "ordinal": 11,
+      "guiPrompt": false
+    },
+    {
+      "name": "token",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": false
+    },
+    {
+      "name": "token_rank",
+      "type": "INTEGER",
+      "ordinal": 20,
+      "guiPrompt": false
+    },
+    {
+      "name": "token_secret",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": false
+    },
+    {
+      "name": "token_status",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": false
+    },
+    {
+      "name": "tokentype",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Access"
+    },
+    {
+      "name": "doc_usage",
+      "value": "Internal"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "Save16.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

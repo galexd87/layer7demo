@@ -1,0 +1,12 @@
+{
+  "goid": "33c21ebb59b7cae5cd069fe74a951e39",
+  "guid": "66513848-dfad-437b-a891-26e58f93f246",
+  "name": "OTK Database Maintenance - token",
+  "policyType": "POLICY_BACKED_BACKGROUND_TASK",
+  "checksum": "a588dc878b9288b1d2b024d60ef07d4ca7ab60dd",
+  "folderPath": "/OTK/Policy Fragments/maintenance",
+  "soap": false,
+  "policy": {
+    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<wsp:Policy xmlns:L7p=\"http://www.layer7tech.com/ws/policy\" xmlns:wsp=\"http://schemas.xmlsoap.org/ws/2002/12/policy\">\n    <wsp:All wsp:Usage=\"Required\">\n        <L7p:CommentAssertion>\n            <L7p:Comment stringValue=\" ============================================\"/>\n        </L7p:CommentAssertion>\n        <L7p:CommentAssertion>\n            <L7p:Comment stringValue=\" === ***  THIS POLICY IS READ ONLY ***\"/>\n        </L7p:CommentAssertion>\n        <L7p:CommentAssertion>\n            <L7p:Comment stringValue=\" === If you have the need to customize this policy\"/>\n        </L7p:CommentAssertion>\n        <L7p:CommentAssertion>\n            <L7p:Comment stringValue=\" === please contact CA APIM Support so we can improve customization capability\"/>\n        </L7p:CommentAssertion>\n        <L7p:CommentAssertion>\n            <L7p:Comment stringValue=\" ============================================\"/>\n        </L7p:CommentAssertion>\n        <L7p:CommentAssertion>\n            <L7p:Comment stringValue=\"Deletes all expired tokens from oauth_token and oauth_initiate\"/>\n        </L7p:CommentAssertion>\n        <L7p:Encapsulated>\n            <L7p:EncapsulatedAssertionConfigGuid stringValue=\"9fd19a1d-b3a1-4040-b4ec-f7b026182c9f\"/>\n            <L7p:EncapsulatedAssertionConfigName stringValue=\"OTK DB Cleanup - token\"/>\n        </L7p:Encapsulated>\n    </wsp:All>\n</wsp:Policy>\n"
+  }
+}

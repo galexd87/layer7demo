@@ -1,0 +1,144 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fca81",
+  "guid": "e924c9d0-fe80-4ae8-9ce0-b24ea6d6d211",
+  "name": "OTK Client DB GET",
+  "checksum": "ee4cfb6851ba0aa5cd2e277052de62c864cef542",
+  "description": "Retrieves client values from the persistence layer. To find out how the parameters can by used refer to the OTK API documentation.",
+  "policyName": "OTK Client DB GET",
+  "encassArgs": [
+    {
+      "name": "client_ident",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false,
+      "guiLabel": ""
+    },
+    {
+      "name": "client_key",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false,
+      "guiLabel": ""
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 12,
+      "guiPrompt": false,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "dbsystem",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": false
+    },
+    {
+      "name": "environment",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": false,
+      "guiLabel": ""
+    },
+    {
+      "name": "filterStatus",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": false,
+      "guiLabel": ""
+    },
+    {
+      "name": "format",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": false,
+      "guiLabel": ""
+    },
+    {
+      "name": "master",
+      "type": "STRING",
+      "ordinal": 11,
+      "guiPrompt": false,
+      "guiLabel": ""
+    },
+    {
+      "name": "name",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false,
+      "guiLabel": ""
+    },
+    {
+      "name": "operation",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": false,
+      "guiLabel": ""
+    },
+    {
+      "name": "org",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": false,
+      "guiLabel": ""
+    },
+    {
+      "name": "queryOffset",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": false,
+      "guiLabel": ""
+    },
+    {
+      "name": "registered_by",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": false,
+      "guiLabel": ""
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Access"
+    },
+    {
+      "name": "doc_usage",
+      "value": "Internal"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "Save16.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

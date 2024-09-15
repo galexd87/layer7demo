@@ -1,0 +1,77 @@
+{
+  "goid": "35f5ccf02323692c2c4a2f0545010a49",
+  "guid": "40a6e516-3ef4-4501-afbc-0ca30fa77317",
+  "name": "OTK setClientKeyOptionalValues",
+  "checksum": "0f7b29866952d117256c25d527c978c775efa05c",
+  "description": "Sets default values for inputs if they are empty",
+  "policyName": "OTK setClientKeyOptionalValues",
+  "encassArgs": [
+    {
+      "name": "callback",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "environment",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    },
+    {
+      "name": "key_custom",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false
+    },
+    {
+      "name": "scope",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "callback",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "environment",
+      "type": "STRING"
+    },
+    {
+      "name": "key_custom",
+      "type": "STRING"
+    },
+    {
+      "name": "scope",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

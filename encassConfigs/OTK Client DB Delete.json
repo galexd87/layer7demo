@@ -1,0 +1,67 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fca6b",
+  "guid": "8af63419-d599-4b4c-b8b2-64126e3bce2d",
+  "name": "OTK Client DB Delete",
+  "checksum": "3f34e6454be35a9605a9231300d2f0b25841a2b9",
+  "description": "Deletes a client configuration including all its depending client_keys (client_id/ oauth_consumer_key).",
+  "policyName": "OTK Client DB Delete",
+  "encassArgs": [
+    {
+      "name": "client_ident",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Access"
+    },
+    {
+      "name": "doc_usage",
+      "value": "Internal"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "Save16.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

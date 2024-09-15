@@ -1,0 +1,12 @@
+{
+  "goid": "2a93e2b64633d7874eb692e23adc735b",
+  "guid": "65160b39-84e5-4e02-ab75-9888ecdfa67b",
+  "name": "#OTK Profile Configuration",
+  "policyType": "FRAGMENT",
+  "checksum": "2084de6eb2775655d3b39b2f907e610871503422",
+  "folderPath": "/OTK/Customizations",
+  "soap": false,
+  "policy": {
+    "xml": "<wsp:Policy xmlns:L7p=\"http://www.layer7tech.com/ws/policy\" xmlns:wsp=\"http://schemas.xmlsoap.org/ws/2002/12/policy\">\n    <wsp:All wsp:Usage=\"Required\">\n        <L7p:CommentAssertion>\n            <L7p:Comment stringValue=\"Policy Fragment: #OTK Profile Configuration\"/>\n        </L7p:CommentAssertion>\n    </wsp:All>\n</wsp:Policy>"
+  }
+}

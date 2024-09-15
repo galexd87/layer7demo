@@ -1,0 +1,63 @@
+{
+  "goid": "2ab3dd0e21ff9887303b082fa5fd9540",
+  "guid": "ccd8081b-3a09-49e1-bcf8-179067a34793",
+  "name": "OTK DCR - Validate mTLS Certificate",
+  "checksum": "a299854959608946e45d933fd5ed1ba0e39981c9",
+  "description": "To validate mTLS cerificate during the DCR",
+  "policyName": "OTK DCR - Validate mTLS Certificate",
+  "encassArgs": [
+    {
+      "name": "mtls_cert_base64",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "mTLS Certificate (base64)"
+    },
+    {
+      "name": "software_id_json_path",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false,
+      "guiLabel": "JSON path of software_id"
+    },
+    {
+      "name": "ssa",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Software Statement"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "error.msg",
+      "type": "STRING"
+    },
+    {
+      "name": "status",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

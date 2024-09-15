@@ -1,0 +1,92 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fd24d",
+  "guid": "755e056d-fe4a-440c-81ac-cc76dfd58899",
+  "name": "OTK id_token Lookup",
+  "checksum": "87737060669c462e74ec3b6a6045509f14f8b32e",
+  "description": "Retrieves values for an id_token. Depending on the configuration the values will be looked up via local database using using 'OTK id_token DB Lookup' or via routing assertion to an endpoint that implements the database access. The following parameters are valid in combination: (resource_owner, azp), (sub, azp), (jwt).",
+  "policyName": "OTK id_token Lookup",
+  "encassArgs": [
+    {
+      "name": "azp",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Valid Users (azp)"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "format",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Format for result (json|xml, default=xml)"
+    },
+    {
+      "name": "jwt",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "JWT (id_token)"
+    },
+    {
+      "name": "resource_owner",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Resource Owner"
+    },
+    {
+      "name": "sub",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Sub(ject)"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Delegate"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "up-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

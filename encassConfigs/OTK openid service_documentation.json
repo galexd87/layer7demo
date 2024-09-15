@@ -1,0 +1,61 @@
+{
+  "goid": "c0e51b62151c23e2d21ecaf1117ca1e0",
+  "guid": "8978fcaf-000e-4839-8898-7d89f4e4c63d",
+  "name": "OTK openid service_documentation",
+  "checksum": "7ffa1a11aa640299837bc37d6ffa566ed0fc67a8",
+  "description": "Supported service documentation as specified in the context of OpenID Connect. Defined for the OpenID Connect Discovery api.\nIt requires 'host_oauth2_auth_server' and 'service_documentation_path' as input.",
+  "policyName": "OTK openid service_documentation",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "host_oauth2_auth_server",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "service_documentation_path",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "discovery.endpoint.enabled",
+      "type": "STRING"
+    },
+    {
+      "name": "service_documentation",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

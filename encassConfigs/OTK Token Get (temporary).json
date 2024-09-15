@@ -1,0 +1,92 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fdb94",
+  "guid": "1b4ad94d-4e84-47f1-9d6b-4c78be51f83f",
+  "name": "OTK Token Get (temporary)",
+  "checksum": "516bb4daf30f87f5039e09e038394b3c4906e2ea",
+  "description": "Retrieves  values about temporary tokens.",
+  "policyName": "OTK Token Get (temporary)",
+  "encassArgs": [
+    {
+      "name": "client_key",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Client ID"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "resource_owner",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Resource Owner"
+    },
+    {
+      "name": "return_json",
+      "type": "BOOLEAN",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Return JSON?"
+    },
+    {
+      "name": "token",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Code/ Request Token"
+    },
+    {
+      "name": "verifier",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Verifier"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Delegate"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "up-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

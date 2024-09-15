@@ -1,0 +1,68 @@
+{
+  "goid": "3b6761a5d0ee0e2d4452b1065da5d88a",
+  "guid": "fb3a7c6b-6fc1-47b3-a823-2eecdfa173fe",
+  "name": "OTK User Attribute Look Up",
+  "checksum": "4b35b1a93c0564a69a4a1a44e35cc82fc85322ac",
+  "description": "Look up attributes for a given username.",
+  "policyName": "OTK User Attribute Look Up",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Additional information"
+    },
+    {
+      "name": "given_username",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Username"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "current.user.attributes",
+      "type": "STRING"
+    },
+    {
+      "name": "current.user.id",
+      "type": "STRING"
+    },
+    {
+      "name": "current.user.idp",
+      "type": "STRING"
+    },
+    {
+      "name": "current.user.role",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "userAttrs16.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

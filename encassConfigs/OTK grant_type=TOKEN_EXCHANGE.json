@@ -1,0 +1,181 @@
+{
+  "goid": "304f6b371511772fe1b124d269718a7f",
+  "guid": "81d19fd1-98a3-45cf-8367-7b5f30b634c6",
+  "name": "OTK grant_type=TOKEN_EXCHANGE",
+  "checksum": "7024096f9dba6c0df8f574ab4692551651221a89",
+  "description": "Handles token-exchange grant type",
+  "policyName": "OTK grant_type=TOKEN_EXCHANGE",
+  "encassArgs": [
+    {
+      "name": "actor_token",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": true,
+      "guiLabel": "Actor Token"
+    },
+    {
+      "name": "actor_token_type",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": true,
+      "guiLabel": "Actor Token Type"
+    },
+    {
+      "name": "at_lifetime",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Access Token Lifetime"
+    },
+    {
+      "name": "at_token",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Access Token"
+    },
+    {
+      "name": "audience",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "Audience"
+    },
+    {
+      "name": "client_custom",
+      "type": "STRING",
+      "ordinal": 16,
+      "guiPrompt": true,
+      "guiLabel": "Client Custom"
+    },
+    {
+      "name": "conditions",
+      "type": "STRING",
+      "ordinal": 15,
+      "guiPrompt": true,
+      "guiLabel": "Conditions"
+    },
+    {
+      "name": "mac_secret",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "MAC Token Secret"
+    },
+    {
+      "name": "receipient",
+      "type": "STRING",
+      "ordinal": 14,
+      "guiPrompt": true,
+      "guiLabel": "Receipient"
+    },
+    {
+      "name": "requested_token_type",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "Requested Token Type"
+    },
+    {
+      "name": "resource",
+      "type": "STRING",
+      "ordinal": 12,
+      "guiPrompt": true,
+      "guiLabel": "Granted Resource"
+    },
+    {
+      "name": "resource.registered",
+      "type": "STRING",
+      "ordinal": 13,
+      "guiPrompt": true,
+      "guiLabel": "Resource Registered"
+    },
+    {
+      "name": "rtoken",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Refresh Token"
+    },
+    {
+      "name": "scope.granted",
+      "type": "STRING",
+      "ordinal": 11,
+      "guiPrompt": true,
+      "guiLabel": "Granted Scope"
+    },
+    {
+      "name": "session_output",
+      "type": "STRING",
+      "ordinal": 17,
+      "guiPrompt": true,
+      "guiLabel": "JSON with session values"
+    },
+    {
+      "name": "subject_token",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Subject Token"
+    },
+    {
+      "name": "subject_token_type",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Subject Token Type"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "act",
+      "type": "STRING"
+    },
+    {
+      "name": "clientResponse",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "owner",
+      "type": "STRING"
+    },
+    {
+      "name": "resource.granted",
+      "type": "STRING"
+    },
+    {
+      "name": "session_output",
+      "type": "STRING"
+    },
+    {
+      "name": "token_secret",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

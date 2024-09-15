@@ -1,0 +1,138 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fd297",
+  "guid": "290511a8-b775-47a7-98ab-7be386da2105",
+  "name": "OTK Client GET",
+  "checksum": "142a686a1bab781bcff761dadc0030b09c9a98d1",
+  "description": "Retrieves values about the given client (or client_id) using the input parameters.",
+  "policyName": "OTK Client GET",
+  "encassArgs": [
+    {
+      "name": "client_ident",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Client Identifier (DB)"
+    },
+    {
+      "name": "client_key",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Client ID"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 12,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "environment",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": true,
+      "guiLabel": "Environment"
+    },
+    {
+      "name": "filterStatus",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": true,
+      "guiLabel": "Client Key Status (ENABLED|DISABLED)"
+    },
+    {
+      "name": "format",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "Format for result (json|xml, default=xml)"
+    },
+    {
+      "name": "master",
+      "type": "STRING",
+      "ordinal": 11,
+      "guiPrompt": true,
+      "guiLabel": "Select only Master-Keys (true-false)"
+    },
+    {
+      "name": "name",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Client Name"
+    },
+    {
+      "name": "operation",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Operation to use (get|getKey|getAll)"
+    },
+    {
+      "name": "org",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Organization"
+    },
+    {
+      "name": "queryOffset",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "Offset in DB query"
+    },
+    {
+      "name": "registered_by",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Registered By"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Delegate"
+    },
+    {
+      "name": "doc_in_operation",
+      "value": "Use 'get' to retrieve client values, 'getKey' for client_id values. 'getAll' is only valid in combination with 'Client ID'"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "up-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

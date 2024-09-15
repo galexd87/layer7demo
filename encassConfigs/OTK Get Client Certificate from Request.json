@@ -1,0 +1,29 @@
+{
+  "goid": "2ab3dd0e21ff9887303b082fa5fe1bb9",
+  "guid": "6d78c656-3d23-40af-b583-0115ae7dd284",
+  "name": "OTK Get Client Certificate from Request",
+  "checksum": "43d487eb095e325fd27c62598d507955401aad5c",
+  "description": "To get client certificate from the request",
+  "policyName": "OTK Get Client Certificate from Request",
+  "encassArgs": [],
+  "encassResults": [
+    {
+      "name": "client_cert_base64",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

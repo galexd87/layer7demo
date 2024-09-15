@@ -1,0 +1,59 @@
+{
+  "goid": "c0e51b62151c23e2d21ecaf1117c27c2",
+  "guid": "9828964e-e756-4915-baaa-d7f6e527af50",
+  "name": "OTK openid id_token_signing_alg_values_supported",
+  "checksum": "c3123e8d3089d3b8f70559ccafcbcc316ac27bce",
+  "description": "Supported id_token_signing_alog as specified in the context of OpenID Connect. Defined for the OpenID Connect Discovery api",
+  "policyName": "OTK openid id_token_signing_alg_values_supported",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "oauth2_profile",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "discovery.endpoint.enabled",
+      "type": "STRING"
+    },
+    {
+      "name": "id_token_signing_alg_values_supported",
+      "type": "STRING"
+    },
+    {
+      "name": "id_token_signing_alg_values_supported_default",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

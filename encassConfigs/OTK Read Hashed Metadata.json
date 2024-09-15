@@ -1,0 +1,40 @@
+{
+  "goid": "d2c5e658b39497556155db9f8e0e3d80",
+  "guid": "6ff16fb5-0eeb-449b-9811-b4a11a3668e9",
+  "name": "OTK Read Hashed Metadata",
+  "checksum": "47db16db2d65cd8a82b7551c12b17891ffd6e3b1",
+  "description": "OTK Read Hashed Metadata",
+  "policyName": "OTK Read Hashed Metadata",
+  "encassArgs": [
+    {
+      "name": "hashing_metadata",
+      "type": "MESSAGE",
+      "ordinal": 1,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "algorithm.result",
+      "type": "STRING"
+    },
+    {
+      "name": "salt.result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

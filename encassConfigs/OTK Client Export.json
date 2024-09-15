@@ -1,0 +1,86 @@
+{
+  "goid": "3f6b5c92ca2ac3665bc7d8780bc4d9c5",
+  "guid": "2033a9ca-e7ca-4908-91aa-962e54b83dc4",
+  "name": "OTK Client Export",
+  "checksum": "68c2e3facc138d8271878cc39bf2f4a363cddf8a",
+  "description": "Exports an OAuth client_id configuration as JSON message.",
+  "policyName": "OTK Client Export",
+  "encassArgs": [
+    {
+      "name": "client_key",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Client ID)"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "expose_client_secret",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Export Client Secret (true,false)?"
+    },
+    {
+      "name": "incoming_xml",
+      "type": "MESSAGE",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Incoming Client Information"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Configuration"
+    },
+    {
+      "name": "doc_in_expose_client_secret",
+      "value": "If set to 'true' the client_secret will be exported. Default = 'false'"
+    },
+    {
+      "name": "doc_in_incoming_xml",
+      "value": "This xml MUST be the output of the assertion 'OTK Client GET' configured with parameter 'Operation to use = getAll'"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "up-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

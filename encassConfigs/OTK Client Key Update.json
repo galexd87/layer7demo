@@ -1,0 +1,141 @@
+{
+  "goid": "3f6b5c92ca2ac3665bc7d8780bc4d9af",
+  "guid": "a2134f0c-05a3-4934-8ebd-b5aaa406ccde",
+  "name": "OTK Client Key Update",
+  "checksum": "2f66b6a13bb303de9ea505c9b118a7e9326f47a5",
+  "description": "Updates a client_key configuration.",
+  "policyName": "OTK Client Key Update",
+  "encassArgs": [
+    {
+      "name": "account_plan_mapping_ids",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": true,
+      "guiLabel": "Account Plan Mapping ID's"
+    },
+    {
+      "name": "callback",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Redirect URI"
+    },
+    {
+      "name": "client_key",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Client ID"
+    },
+    {
+      "name": "client_secret",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Client Secret"
+    },
+    {
+      "name": "client_status",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Status"
+    },
+    {
+      "name": "created_by",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "Created_by, handled exclusively"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 11,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "environment",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Environment"
+    },
+    {
+      "name": "hashing_metadata",
+      "type": "MESSAGE",
+      "ordinal": 12,
+      "guiPrompt": true,
+      "guiLabel": "hashing_metadata if any"
+    },
+    {
+      "name": "key_custom",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "Custom Fields"
+    },
+    {
+      "name": "resource",
+      "type": "STRING",
+      "ordinal": 13,
+      "guiPrompt": true,
+      "guiLabel": "Permitted Resources"
+    },
+    {
+      "name": "scope",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "SCOPE"
+    },
+    {
+      "name": "service_ids",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": true,
+      "guiLabel": "Service ID's"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Delegate"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "down-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

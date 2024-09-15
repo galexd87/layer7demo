@@ -1,0 +1,66 @@
+{
+  "goid": "d82da0a76165678d597f8cf3be584a91",
+  "guid": "357db91a-500e-41e9-b192-4990f9507ce9",
+  "name": "OTK Health Check",
+  "checksum": "6caf2fb5b9a2778f3d91c04f3b6492ed81979498",
+  "policyName": "OTK Health Check",
+  "encassArgs": [
+    {
+      "name": "api_key",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false,
+      "guiLabel": "Api Key"
+    },
+    {
+      "name": "check_type",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false,
+      "guiLabel": "basic|advanced"
+    },
+    {
+      "name": "client_id",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false,
+      "guiLabel": "Client id"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "error.msg",
+      "type": "STRING"
+    },
+    {
+      "name": "healthCheckError",
+      "type": "STRING"
+    },
+    {
+      "name": "status",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

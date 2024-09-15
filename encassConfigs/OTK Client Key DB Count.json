@@ -1,0 +1,67 @@
+{
+  "goid": "f2b26bfeaabb0821a8089e0054453673",
+  "guid": "c149b115-a991-4b38-b824-c9ee964269db",
+  "name": "OTK Client Key DB Count",
+  "checksum": "b5c9300fe012e4fbeaac9b83ccc9ecdf8e068cfd",
+  "description": "Returns a count of non-master Client Keys associated to a given App (client_ident).",
+  "policyName": "OTK Client Key DB Count",
+  "encassArgs": [
+    {
+      "name": "client_ident",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "dbsystem",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": false
+    },
+    {
+      "name": "other",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "count",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "Save16.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

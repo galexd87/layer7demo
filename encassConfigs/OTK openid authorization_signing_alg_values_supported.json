@@ -1,0 +1,53 @@
+{
+  "goid": "e992580f128fe7e04bf97e02e5d9d8ca",
+  "guid": "bd55a51e-d50a-488d-a2eb-ce7d7a4084f3",
+  "name": "OTK openid authorization_signing_alg_values_supported",
+  "checksum": "9567e31ad38a3e8d48a3fc34c3cd4b28b18ac0ce",
+  "description": "List of the JWS RFC7515 signing algorithms (alg values) JWA RFC7518 supported by the authorization endpoint to sign the response.",
+  "policyName": "OTK openid authorization_signing_alg_values_supported",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "authorization_signing_alg_values_supported",
+      "type": "STRING"
+    },
+    {
+      "name": "authorization_signing_alg_values_supported_default",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "discovery.endpoint.enabled",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

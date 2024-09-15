@@ -1,0 +1,167 @@
+{
+  "goid": "e11fcd56ac4cdcbdc2a2040cef1abd14",
+  "guid": "f83b5e92-cfaf-47f3-8b0b-4e4e6f91c07f",
+  "name": "OTK grant_type=DEVICE_AUTHORIZATION_CODE",
+  "checksum": "46d3db78735f8f04096fe49c9c670eb51986d456",
+  "policyName": "OTK grant_type=DEVICE_AUTHORIZATION_CODE",
+  "encassArgs": [
+    {
+      "name": "at_lifetime",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Access Token Lifetime"
+    },
+    {
+      "name": "at_token",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Access Token"
+    },
+    {
+      "name": "client_id",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Client ID"
+    },
+    {
+      "name": "client_key_custom",
+      "type": "STRING",
+      "ordinal": 13,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_secret",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Client Secret"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "device_code",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Device Authorization Code"
+    },
+    {
+      "name": "mTLS_certificate_thumbprint",
+      "type": "STRING",
+      "ordinal": 12,
+      "guiPrompt": true,
+      "guiLabel": "mTLS Certificate Thumbprint"
+    },
+    {
+      "name": "mac_secret",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "MAC Token Secret"
+    },
+    {
+      "name": "magidentifier",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "MAG Identifier of requesting device"
+    },
+    {
+      "name": "resource",
+      "type": "STRING",
+      "ordinal": 11,
+      "guiPrompt": true,
+      "guiLabel": "Resource"
+    },
+    {
+      "name": "rtoken",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Refresh Token"
+    },
+    {
+      "name": "scope",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": true,
+      "guiLabel": "Scope"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "clientResponse",
+      "type": "STRING"
+    },
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "jwt",
+      "type": "STRING"
+    },
+    {
+      "name": "owner",
+      "type": "STRING"
+    },
+    {
+      "name": "resource.granted",
+      "type": "STRING"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    },
+    {
+      "name": "scope.granted",
+      "type": "STRING"
+    },
+    {
+      "name": "session_output",
+      "type": "STRING"
+    },
+    {
+      "name": "token_rank",
+      "type": "STRING"
+    },
+    {
+      "name": "token_secret",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

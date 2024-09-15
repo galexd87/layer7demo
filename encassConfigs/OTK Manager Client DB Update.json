@@ -1,0 +1,181 @@
+{
+  "goid": "f76f2a2a24844be3c0f269b19f06bc09",
+  "guid": "da4106c9-365c-44cd-b3d6-899bb3cece12",
+  "name": "OTK Manager Client DB Update",
+  "checksum": "b6681f9eef523d49668b894979f0bd1f9c3dee5c",
+  "description": "Updates a client or a client_key. For use by OAuth Manager.",
+  "policyName": "OTK Manager Client DB Update",
+  "encassArgs": [
+    {
+      "name": "account_plan_mapping_ids",
+      "type": "STRING",
+      "ordinal": 17,
+      "guiPrompt": false
+    },
+    {
+      "name": "callback",
+      "type": "STRING",
+      "ordinal": 12,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_custom",
+      "type": "STRING",
+      "ordinal": 14,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_ident",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_key",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_name",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_secret",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_status",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": false
+    },
+    {
+      "name": "created_by",
+      "type": "STRING",
+      "ordinal": 13,
+      "guiPrompt": false
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 18,
+      "guiPrompt": false,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "description",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": false
+    },
+    {
+      "name": "environment",
+      "type": "STRING",
+      "ordinal": 11,
+      "guiPrompt": false
+    },
+    {
+      "name": "hashing_metadata",
+      "type": "MESSAGE",
+      "ordinal": 19,
+      "guiPrompt": false
+    },
+    {
+      "name": "key_custom",
+      "type": "STRING",
+      "ordinal": 15,
+      "guiPrompt": false
+    },
+    {
+      "name": "org",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": false
+    },
+    {
+      "name": "persist_type",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": false
+    },
+    {
+      "name": "resource",
+      "type": "STRING",
+      "ordinal": 20,
+      "guiPrompt": false
+    },
+    {
+      "name": "scope",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": false
+    },
+    {
+      "name": "secret_expiration",
+      "type": "STRING",
+      "ordinal": 21,
+      "guiPrompt": false
+    },
+    {
+      "name": "service_ids",
+      "type": "STRING",
+      "ordinal": 16,
+      "guiPrompt": false
+    },
+    {
+      "name": "type",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Access"
+    },
+    {
+      "name": "doc_usage",
+      "value": "Internal"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "Save16.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

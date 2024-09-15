@@ -1,0 +1,49 @@
+{
+  "goid": "7f950a1a9589d8f7469c3eec0b1a6a44",
+  "guid": "74aad7f3-2982-4f60-b6b9-20c517f1af20",
+  "name": "OTK openid request_parameter_supported",
+  "checksum": "ef6564735a7ae1bff4960e538057ac9cd23cedaa",
+  "description": "Supported request_parameters as specified in the context of OpenID Connect. Defined for the\n                OpenID Connect Discovery api\n                custom\n            ",
+  "policyName": "OTK openid request_parameter_supported",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "discovery.endpoint.enabled",
+      "type": "STRING"
+    },
+    {
+      "name": "request_parameter_supported",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

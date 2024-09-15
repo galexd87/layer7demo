@@ -1,0 +1,60 @@
+{
+  "goid": "4ce85906c38aaeabd23b4c9fc34547c0",
+  "guid": "e9aff3ea-679f-4b11-934a-9b37dfb12d66",
+  "name": "OTK Token Read (ciba)",
+  "checksum": "193e2e87203baae6bb734a77d1c09f60dea3b84e",
+  "description": "Retrieves CIBA token details",
+  "policyName": "OTK Token Read (ciba)",
+  "encassArgs": [
+    {
+      "name": "auth_req_id",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": ""
+    },
+    {
+      "name": "return_json",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": ""
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "up-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

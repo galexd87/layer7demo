@@ -1,0 +1,202 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fdca6",
+  "guid": "27196c5d-a37a-4ee3-a24a-01615c2e1bb1",
+  "name": "OTK User Authentication",
+  "checksum": "6768fc5ae8370c120ff12b2e321419b8a164b481",
+  "description": "Authenticates users through different means. It authenticates users against the configured IDP",
+  "policyName": "OTK User Authentication",
+  "encassArgs": [
+    {
+      "name": "acrValuesEssential",
+      "type": "STRING",
+      "ordinal": 16,
+      "guiPrompt": true,
+      "guiLabel": "Essential claims requested for acr_values"
+    },
+    {
+      "name": "acrValuesRequested",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Requested acr_values"
+    },
+    {
+      "name": "authHeader",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Basic Authorization Header"
+    },
+    {
+      "name": "authIdToken",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Current OpenID Connect id_token"
+    },
+    {
+      "name": "clientId",
+      "type": "STRING",
+      "ordinal": 13,
+      "guiPrompt": true,
+      "guiLabel": "ID of the client"
+    },
+    {
+      "name": "cookie",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Cookie-Header"
+    },
+    {
+      "name": "cookiename",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "Cookie (browser session cookies)"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 15,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "maxAge",
+      "type": "STRING",
+      "ordinal": 14,
+      "guiPrompt": true,
+      "guiLabel": "Max Age for Authentication time"
+    },
+    {
+      "name": "oauth_token",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": true,
+      "guiLabel": "[mag] OAuth 1.0 Token  (social login)"
+    },
+    {
+      "name": "oauth_verifier",
+      "type": "STRING",
+      "ordinal": 11,
+      "guiPrompt": true,
+      "guiLabel": "[mag] OAuth 1.0 Verifier (social login)"
+    },
+    {
+      "name": "password",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Password"
+    },
+    {
+      "name": "prompt",
+      "type": "STRING",
+      "ordinal": 12,
+      "guiPrompt": true,
+      "guiLabel": "Prompt type for reauthentication and consent"
+    },
+    {
+      "name": "provider",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "[mag] Third Party ID Provider (social login)"
+    },
+    {
+      "name": "state",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": true,
+      "guiLabel": "[mag] State (social login)"
+    },
+    {
+      "name": "username",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Username"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "current.user.acr",
+      "type": "STRING"
+    },
+    {
+      "name": "current.user.attributes",
+      "type": "STRING"
+    },
+    {
+      "name": "current.user.authTime",
+      "type": "STRING"
+    },
+    {
+      "name": "current.user.role",
+      "type": "STRING"
+    },
+    {
+      "name": "current.username",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "salt",
+      "type": "STRING"
+    },
+    {
+      "name": "third_party_sso_token",
+      "type": "STRING"
+    },
+    {
+      "name": "third_party_sso_token_type",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Access_Control"
+    },
+    {
+      "name": "doc_in_authHeader",
+      "value": "This value will only be respected if 'Username' is empty"
+    },
+    {
+      "name": "doc_in_cookiename",
+      "value": "The name of the cookie that should be found in the value of 'Cookie-Header'. This value will only be respected if 'Username' is empty"
+    },
+    {
+      "name": "doc_out_third_party_sso_token",
+      "value": "By default a SiteMinder SSO token (not the SMSESSION cookie) used to re-authenticate a user. This is for MAG installations only"
+    },
+    {
+      "name": "doc_require_customization",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "user16.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

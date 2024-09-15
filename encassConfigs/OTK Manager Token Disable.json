@@ -1,0 +1,64 @@
+{
+  "goid": "911fa10d982116ce7069f803d5b590be",
+  "guid": "cd21aefd-99f1-45f5-80ab-4bee011b9b5c",
+  "name": "OTK Manager Token Disable",
+  "checksum": "4089b47cd1d122afd447f22971425ae33b495d38",
+  "description": "Disables tokens issued for given client_key (client_id/ oauth_consumer_key). For use by OAuth Manager.",
+  "policyName": "OTK Manager Token Disable",
+  "encassArgs": [
+    {
+      "name": "client_key",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Client ID"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Delegate"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "down-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

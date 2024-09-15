@@ -1,0 +1,43 @@
+{
+  "goid": "0cd7d572b7a6e47f76a69e2dafd68879",
+  "name": "aa",
+  "checksum": "15138ea88f427840ff289ce0b66e8ae69e5103d7",
+  "description": "aa",
+  "type": "FILE",
+  "enabled": true,
+  "severity": "INFO",
+  "categories": [
+    "AUDIT",
+    "LOG"
+  ],
+  "filters": [
+    {
+      "type": "logger-name",
+      "values": [
+        "com.l7tech.server.admin"
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "name": "file.logCount",
+      "value": "2"
+    },
+    {
+      "name": "file.maxSize",
+      "value": "1024"
+    },
+    {
+      "name": "file.interval",
+      "value": "DAILY"
+    },
+    {
+      "name": "file.rolling",
+      "value": "false"
+    },
+    {
+      "name": "file.format",
+      "value": "STANDARD"
+    }
+  ]
+}

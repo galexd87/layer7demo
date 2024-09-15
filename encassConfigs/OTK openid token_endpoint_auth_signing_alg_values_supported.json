@@ -1,0 +1,59 @@
+{
+  "goid": "c0e51b62151c23e2d21ecaf1117ca102",
+  "guid": "c949b706-a4d1-4a92-9e5d-75e6dc5c6258",
+  "name": "OTK openid token_endpoint_auth_signing_alg_values_supported",
+  "checksum": "d2154d3074067d4b373f497a9236a6d0be76ad78",
+  "description": "Supported token auth signing alg as specified in the context of OpenID Connect. Defined for the OpenID Connect Discovery api.\n                Currently none are supported",
+  "policyName": "OTK openid token_endpoint_auth_signing_alg_values_supported",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "oauth2_profile",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "discovery.endpoint.enabled",
+      "type": "STRING"
+    },
+    {
+      "name": "token_endpoint_auth_signing_alg_values_supported",
+      "type": "STRING"
+    },
+    {
+      "name": "token_endpoint_auth_signing_alg_values_supported_default",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

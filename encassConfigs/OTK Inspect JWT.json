@@ -1,0 +1,69 @@
+{
+  "goid": "2ab3dd0e21ff9887303b082fa5fd90fa",
+  "guid": "3a383b6b-f60d-4d1b-a08d-26ea81c539a7",
+  "name": "OTK Inspect JWT",
+  "checksum": "6a34839d527be5e4243c420e2e5746733902a721",
+  "description": "To inspect the JWT",
+  "policyName": "OTK Inspect JWT",
+  "encassArgs": [
+    {
+      "name": "check_expiry",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Check Expiry"
+    },
+    {
+      "name": "jwks",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "JWKS"
+    },
+    {
+      "name": "jwt",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "JWT"
+    },
+    {
+      "name": "jwt_hint",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "JWT Hint"
+    },
+    {
+      "name": "kid",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Key ID"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "jwt_header",
+      "type": "STRING"
+    },
+    {
+      "name": "jwt_payload",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

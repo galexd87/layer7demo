@@ -1,0 +1,169 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fd30a",
+  "guid": "e420eb2a-6174-4b2e-a9d8-a809e3c892b3",
+  "name": "OTK Client Validation",
+  "checksum": "4cfb4aa385656eae2e03b3e42e63771798bfa22a",
+  "description": "Validates values for the given client_id. It will fail if the client_id is a 'master'key'. Other values will only be validated if they are given.",
+  "policyName": "OTK Client Validation",
+  "encassArgs": [
+    {
+      "name": "audience",
+      "type": "STRING",
+      "ordinal": 14,
+      "guiPrompt": true,
+      "guiLabel": "Required Audience"
+    },
+    {
+      "name": "client_assertion",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Client Assertion (JWT)"
+    },
+    {
+      "name": "client_assertion_type",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Cleint Assertion Type"
+    },
+    {
+      "name": "client_cert_base64",
+      "type": "STRING",
+      "ordinal": 13,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_id",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Client ID"
+    },
+    {
+      "name": "client_info",
+      "type": "MESSAGE",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Client Info as XML"
+    },
+    {
+      "name": "client_name",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Client Name"
+    },
+    {
+      "name": "client_secret",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Client Secret"
+    },
+    {
+      "name": "client_status",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": true,
+      "guiLabel": "Status (ENABLED|DISABLED)"
+    },
+    {
+      "name": "client_type",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "Type of client (public|confidential)"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 12,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "device_authorization_grant_flow",
+      "type": "STRING",
+      "ordinal": 15,
+      "guiPrompt": false
+    },
+    {
+      "name": "environment",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "Environment"
+    },
+    {
+      "name": "expiration",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": true,
+      "guiLabel": "Expiration (true|false)"
+    },
+    {
+      "name": "scope",
+      "type": "STRING",
+      "ordinal": 11,
+      "guiPrompt": true,
+      "guiLabel": "SCOPE"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    },
+    {
+      "name": "status",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "OAuth_Validation"
+    },
+    {
+      "name": "doc_in_client_info",
+      "value": "This value MUST be the output of the assertion 'OTK Client GET' configured with parameter 'Operation to use = getAll'"
+    },
+    {
+      "name": "doc_out_resp",
+      "value": "A message containing details about the client if the validation was successful. Default message format: xml"
+    },
+    {
+      "name": "doc_usage",
+      "value": "Internal"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "validate.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

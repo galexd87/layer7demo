@@ -1,0 +1,48 @@
+{
+  "goid": "a85328b7937a1ea2738d97f9e894499b",
+  "guid": "8f4327ba-f3fd-4410-99e4-571cbec1feaa",
+  "name": "OTK Token Suffix",
+  "checksum": "52fff077316d36c9013747608ede8e5e9ca162a6",
+  "description": "Appends expiration or rexpiration interval to the token",
+  "policyName": "OTK Token Suffix",
+  "encassArgs": [
+    {
+      "name": "access_token",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "dbsystem",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    },
+    {
+      "name": "token_expiration",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "access_token",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

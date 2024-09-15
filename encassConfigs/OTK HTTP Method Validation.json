@@ -1,0 +1,76 @@
+{
+  "goid": "3f6b5c92ca2ac3665bc7d8780bc4d876",
+  "guid": "b8822449-71ff-455b-8f10-39122e6c549b",
+  "name": "OTK HTTP Method Validation",
+  "checksum": "49f070dd59f42f3c28db2fe7ecd887153ec0826e",
+  "description": "Validates the used HTTP method.",
+  "policyName": "OTK HTTP Method Validation",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "method",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Valid HTTP Method (...|...)"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.msg",
+      "type": "STRING"
+    },
+    {
+      "name": "http_method_allowed",
+      "type": "STRING"
+    },
+    {
+      "name": "http_method_used",
+      "type": "STRING"
+    },
+    {
+      "name": "status",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Access_Control"
+    },
+    {
+      "name": "doc_in_method",
+      "value": "A pipe separated list of accepted http methods"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "validate.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

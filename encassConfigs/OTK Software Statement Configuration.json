@@ -1,0 +1,89 @@
+{
+  "goid": "cf167b564434be66be5c46c64062f7df",
+  "guid": "72449a64-b6a3-4c06-aeec-686cd2d071a5",
+  "name": "OTK Software Statement Configuration",
+  "checksum": "b12d2f2cfd5b80c7150f4a04cbfe8c10c7ba9365",
+  "description": "Exports variables that are required to process Software Statement Assertion.",
+  "policyName": "OTK Software Statement Configuration",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "client_description_json_path",
+      "type": "STRING"
+    },
+    {
+      "name": "client_id_json_path",
+      "type": "STRING"
+    },
+    {
+      "name": "client_name_json_path",
+      "type": "STRING"
+    },
+    {
+      "name": "client_uri_json_path",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "logo_uri_json_path",
+      "type": "STRING"
+    },
+    {
+      "name": "policy_uri_json_path",
+      "type": "STRING"
+    },
+    {
+      "name": "redirect_uris_json_path",
+      "type": "STRING"
+    },
+    {
+      "name": "roles_json_path",
+      "type": "STRING"
+    },
+    {
+      "name": "software_id_json_path",
+      "type": "STRING"
+    },
+    {
+      "name": "software_jwks_endpoint_json_path",
+      "type": "STRING"
+    },
+    {
+      "name": "software_version_json_path",
+      "type": "STRING"
+    },
+    {
+      "name": "tos_uri_json_path",
+      "type": "STRING"
+    },
+    {
+      "name": "transport_cert_cn_json_path",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

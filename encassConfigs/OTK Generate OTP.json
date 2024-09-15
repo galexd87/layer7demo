@@ -1,0 +1,63 @@
+{
+  "goid": "74ddbfec4253266de51da954fed419e4",
+  "guid": "0845fc48-99f5-417a-9199-269b74659d6b",
+  "name": "OTK Generate OTP",
+  "checksum": "89b1b4b436d0207d2cf1df224636a7349eeac042",
+  "description": "To generate OTP",
+  "policyName": "OTK Generate OTP",
+  "encassArgs": [
+    {
+      "name": "default_otp_length",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": false
+    },
+    {
+      "name": "max_otp_length",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": false
+    },
+    {
+      "name": "otp_case",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "OTP Case"
+    },
+    {
+      "name": "otp_length",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "OTP Length (in chars)"
+    },
+    {
+      "name": "otp_type",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "OTP Type (numeric|alphanumeric)"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "otp",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

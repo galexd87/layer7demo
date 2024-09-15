@@ -1,0 +1,51 @@
+{
+  "goid": "f56106e7b529e848bd30a0838ceb9adf",
+  "guid": "0591cfc9-7ee3-4d8b-97e9-60cf3721dcf9",
+  "name": "OTK Generate JWT Authorization Response",
+  "checksum": "a69fe2e6251afde0427051906169d1467846f0b0",
+  "description": "Used to generate JWT based authorization response",
+  "policyName": "OTK Generate JWT Authorization Response",
+  "encassArgs": [
+    {
+      "name": "client_id",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Client ID"
+    },
+    {
+      "name": "client_key_custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Client Key Custom Details"
+    },
+    {
+      "name": "payload",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Payload"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "authz_response_jwt",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

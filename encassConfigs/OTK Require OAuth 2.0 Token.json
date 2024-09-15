@@ -1,0 +1,216 @@
+{
+  "goid": "3f6b5c92ca2ac3665bc7d8780bc4d718",
+  "guid": "393bcb93-82ad-4b55-8333-1119f607a560",
+  "name": "OTK Require OAuth 2.0 Token",
+  "checksum": "782088953ee936ec1feaa0ab2eb247b5a11a6294",
+  "description": "Validates an OAuth 2.0 access_token for a request. By default the request will fail if the given access_token has expired or does not match the given configuration.",
+  "policyName": "OTK Require OAuth 2.0 Token",
+  "encassArgs": [
+    {
+      "name": "any_resource_required",
+      "type": "BOOLEAN",
+      "ordinal": 9,
+      "guiPrompt": true,
+      "guiLabel": "Pass if any of the required audience are found ?"
+    },
+    {
+      "name": "cache_lifetime",
+      "type": "INTEGER",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Cache validation result (s)"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "disable_audience_check",
+      "type": "BOOLEAN",
+      "ordinal": 10,
+      "guiPrompt": true,
+      "guiLabel": "Disable intended audience check"
+    },
+    {
+      "name": "disallow_query",
+      "type": "BOOLEAN",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Disallow retrieving access_token from query string"
+    },
+    {
+      "name": "given_access_token",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Access Token (Bearer only, optional)"
+    },
+    {
+      "name": "onetime",
+      "type": "BOOLEAN",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Is this a one-time access_token?"
+    },
+    {
+      "name": "resource_required",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "Required Audience"
+    },
+    {
+      "name": "scope_fail",
+      "type": "BOOLEAN",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Fail if this SCOPE was granted?"
+    },
+    {
+      "name": "scope_required",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Required SCOPE(s)"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "access_token",
+      "type": "STRING"
+    },
+    {
+      "name": "access_token_type",
+      "type": "STRING"
+    },
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "error.msg",
+      "type": "STRING"
+    },
+    {
+      "name": "session.act_claim",
+      "type": "STRING"
+    },
+    {
+      "name": "session.client_id",
+      "type": "STRING"
+    },
+    {
+      "name": "session.custom",
+      "type": "STRING"
+    },
+    {
+      "name": "session.expires_at",
+      "type": "STRING"
+    },
+    {
+      "name": "session.may_act_claim",
+      "type": "STRING"
+    },
+    {
+      "name": "session.resource",
+      "type": "STRING"
+    },
+    {
+      "name": "session.resource_verified",
+      "type": "STRING"
+    },
+    {
+      "name": "session.scope",
+      "type": "STRING"
+    },
+    {
+      "name": "session.subscriber_id",
+      "type": "STRING"
+    },
+    {
+      "name": "status",
+      "type": "STRING"
+    },
+    {
+      "name": "uuid_token",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Access_Control"
+    },
+    {
+      "name": "doc_in_cache_lifetime",
+      "value": "Time in seconds for which the access_token will not be validated again. Use this value as a compromise between increasing performance and security. A typical value would be '30'"
+    },
+    {
+      "name": "doc_in_given_access_token",
+      "value": "Use this field if no access_token is received through the request message but was issued out-of-band"
+    },
+    {
+      "name": "doc_in_onetime",
+      "value": "If set to 'true' the access_token (and the associated refresh_token) will be invalidated after being used once. Default = 'false'"
+    },
+    {
+      "name": "doc_in_scope_fail",
+      "value": "If set to 'true' the assertion fails if the given SCOPE was granted for this access_token"
+    },
+    {
+      "name": "doc_in_scope_required",
+      "value": "A space separated list of SCOPE values this access_token MUST have been granted for"
+    },
+    {
+      "name": "doc_out_access_token",
+      "value": "The access_token of the request"
+    },
+    {
+      "name": "doc_out_content-type",
+      "value": "The content-type of the 'error.msg' if it exists"
+    },
+    {
+      "name": "doc_out_session.client_id",
+      "value": "The client_id for which the access_token was granted"
+    },
+    {
+      "name": "doc_out_session.custom",
+      "value": "A JSON structure containing the used grant_type, the client_type and values specified in the custom field of the associated client_id"
+    },
+    {
+      "name": "doc_out_session.scope",
+      "value": "The SCOPE that was granted to the access_token"
+    },
+    {
+      "name": "doc_out_session.subscriber_id",
+      "value": "The user who granted the access_token/ client"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

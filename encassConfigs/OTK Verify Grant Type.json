@@ -1,0 +1,57 @@
+{
+  "goid": "30650f1aff51111e6be39ed4a98c8beb",
+  "guid": "37d1d062-41a5-4dee-bc34-18ff2cc3b4dd",
+  "name": "OTK Verify Grant Type",
+  "checksum": "e16899e13520c3d64a947a4d65c790d92da672b5",
+  "policyName": "OTK Verify Grant Type",
+  "encassArgs": [
+    {
+      "name": "client_custom",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "client_custom"
+    },
+    {
+      "name": "client_key_custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "client_key_custom"
+    },
+    {
+      "name": "grant_type",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "grant_type"
+    },
+    {
+      "name": "scopes",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "scopes"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "error.code",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

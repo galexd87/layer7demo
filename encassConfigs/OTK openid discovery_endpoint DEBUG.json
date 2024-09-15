@@ -1,0 +1,45 @@
+{
+  "goid": "6dde90631ca0a9148402cb3d932f6724",
+  "guid": "df4edb59-d4ba-4bdd-a0b2-34eb27a5230b",
+  "name": "OTK openid discovery_endpoint DEBUG",
+  "checksum": "e4594dc43b55821f82ba75b9ac90943f4f6706ce",
+  "description": "Defined for openid discovery configuration endpoint for debug purpose.",
+  "policyName": "OTK openid discovery_endpoint DEBUG",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "debugOnError",
+      "type": "STRING"
+    },
+    {
+      "name": "debugOnSuccess",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

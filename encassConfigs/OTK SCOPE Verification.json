@@ -1,0 +1,85 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fd28f",
+  "guid": "f78f0f85-00e2-49b1-95e4-e520df255c9c",
+  "name": "OTK SCOPE Verification",
+  "checksum": "04d0ff7b452bc7757bb27ee6f6418539221999ce",
+  "description": "Verifies SCOPE and fails if the requested SCOPE does not match the granted one.",
+  "policyName": "OTK SCOPE Verification",
+  "encassArgs": [
+    {
+      "name": "any",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Pass if any of the required SCOPEs are found (true|false)?"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "fail",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Fail if the SCOPE is found (true|false)?"
+    },
+    {
+      "name": "scope.granted",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Granted SCOPE"
+    },
+    {
+      "name": "scope.required",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Required SCOPE"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Access_Control"
+    },
+    {
+      "name": "doc_in_scope.granted",
+      "value": "A space separated list of granted/ valid SCOPE values"
+    },
+    {
+      "name": "doc_in_scope.required",
+      "value": "A space separated list of required SCOPE values"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

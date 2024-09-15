@@ -1,0 +1,67 @@
+{
+  "goid": "efc6a765ba66b41f4bb7b1fc58c6ce8d",
+  "guid": "d41c4030-0329-4d07-8301-2850188263b8",
+  "name": "OTK Analyze App Usage",
+  "checksum": "fc7c07c6dbb683f84c8410d5c7b3915439f2702d",
+  "description": "Retrieves data such as installed number of client_id's for the given client and also the number of active access_token",
+  "policyName": "OTK Analyze App Usage",
+  "encassArgs": [
+    {
+      "name": "client_ident",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Client_ident"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "other",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Add a JSON structure for more parameters"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "activeUsers",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "installCount",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "up-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "true"
+    }
+  ]
+}

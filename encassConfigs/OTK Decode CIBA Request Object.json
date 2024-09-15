@@ -1,0 +1,87 @@
+{
+  "goid": "604c1b4e0d1763891f599dabd2f89a1f",
+  "guid": "83fc7c40-3dfb-4262-b196-fcb5bc47efbd",
+  "name": "OTK Decode CIBA Request Object",
+  "checksum": "5d52cbe41f33f2186ac0791a83fcf05033b93a31",
+  "policyName": "OTK Decode CIBA Request Object",
+  "encassArgs": [
+    {
+      "name": "authorize_request",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_id",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false
+    },
+    {
+      "name": "client_key_custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    },
+    {
+      "name": "oauth2_profile",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": false
+    },
+    {
+      "name": "oauth_server_url",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "acr_values",
+      "type": "STRING"
+    },
+    {
+      "name": "binding_message",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "id_token_hint",
+      "type": "STRING"
+    },
+    {
+      "name": "login_hint",
+      "type": "STRING"
+    },
+    {
+      "name": "login_hint_token",
+      "type": "STRING"
+    },
+    {
+      "name": "requested_expiry",
+      "type": "STRING"
+    },
+    {
+      "name": "scope",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

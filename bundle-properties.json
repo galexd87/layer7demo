@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "92d94e51-58cf-4e86-b00a-018120a3bd9b",
+    "name": "Gateway Graphman Bundle - 2024-09-15T16:01:18.789+03:00",
+    "author": "ssm",
+    "hostname": "192.168.204.60",
+    "timestamp": "2024-09-15T16:01:18.789+03:00"
+  },
+  "defaultAction": "NEW_OR_UPDATE"
+}

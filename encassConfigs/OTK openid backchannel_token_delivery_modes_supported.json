@@ -1,0 +1,53 @@
+{
+  "goid": "604c1b4e0d1763891f599dabd2f6264f",
+  "guid": "9811427e-a0e4-4065-a89c-aa6e80606bf4",
+  "name": "OTK openid backchannel_token_delivery_modes_supported",
+  "checksum": "fa11952330adc8e0514794ca7a00c513e30cf458",
+  "policyName": "OTK openid backchannel_token_delivery_modes_supported",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "oauth2_profile",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "backchannel_token_delivery_modes_supported",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "discovery.endpoint.enabled",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

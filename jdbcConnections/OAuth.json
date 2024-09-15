@@ -1,0 +1,22 @@
+{
+  "goid": "208673dbebcb21d65a8026fb15eb6e54",
+  "name": "OAuth",
+  "checksum": "b591b520584aa4b5fee6293cf66506a6342bf94c",
+  "enabled": true,
+  "driverClass": "com.mysql.cj.jdbc.Driver",
+  "jdbcUrl": "jdbc:mysql://localhost:3306/otk_db",
+  "username": "otk_user",
+  "password": "JEw3RXYwMyR6gOiS7RiFBhX+p+j5z0U8+5tCqUOgs1nTWip8LdozIQ==",
+  "minPoolSize": 3,
+  "maxPoolSize": 15,
+  "properties": [
+    {
+      "name": "EnableCancelTimeout",
+      "value": "true"
+    },
+    {
+      "name": "allowPublicKeyRetrieval",
+      "value": "true"
+    }
+  ]
+}

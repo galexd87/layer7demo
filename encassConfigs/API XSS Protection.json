@@ -1,0 +1,64 @@
+{
+  "goid": "0bd2dba04a776295161982122c3b1ea0",
+  "guid": "2be8eaf2-9b42-4173-ace9-3fdb471fb407",
+  "name": "API XSS Protection",
+  "checksum": "02e6dad8203ffc08e26487d65e8fd59f2a839a5e",
+  "description": "Protect against xss",
+  "policyName": "API XSS Protection",
+  "encassArgs": [
+    {
+      "name": "allinput",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Validate input against XSS"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "error.msg",
+      "type": "STRING"
+    },
+    {
+      "name": "status",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "xml"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "RedYellowShield16.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

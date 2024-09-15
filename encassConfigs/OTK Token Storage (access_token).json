@@ -1,0 +1,133 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fda10",
+  "guid": "eb5e4d62-555a-43a2-b3ad-d0f4050ca3b8",
+  "name": "OTK Token Storage (access_token)",
+  "checksum": "b1e9b7e38a53522fd003ef8cef153767451385ca",
+  "description": "Persists an OAuth 2.0 access_token. The token secret is optional.",
+  "policyName": "OTK Token Storage (access_token)",
+  "encassArgs": [
+    {
+      "name": "client",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Client"
+    },
+    {
+      "name": "client_key",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Client Key"
+    },
+    {
+      "name": "client_name",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Client Name"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": true,
+      "guiLabel": "JSON with session values"
+    },
+    {
+      "name": "expiration",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Expiration"
+    },
+    {
+      "name": "resource",
+      "type": "STRING",
+      "ordinal": 11,
+      "guiPrompt": true,
+      "guiLabel": "Audience Information"
+    },
+    {
+      "name": "resource_owner",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Resource Owner"
+    },
+    {
+      "name": "scope",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "SCOPE"
+    },
+    {
+      "name": "token",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "Access Token"
+    },
+    {
+      "name": "token_rank",
+      "type": "INTEGER",
+      "ordinal": 12,
+      "guiPrompt": false
+    },
+    {
+      "name": "token_secret",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": true,
+      "guiLabel": "Token Secret*"
+    },
+    {
+      "name": "token_status",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "Token Status"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Delegate"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "down-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

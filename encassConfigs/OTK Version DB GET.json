@@ -1,0 +1,33 @@
+{
+  "goid": "8fe8758562044b9ec29b0cef7349b73a",
+  "guid": "b2712ba7-7981-486f-bcba-64d94e731b64",
+  "name": "OTK Version DB GET",
+  "checksum": "2fb88485ae0c80bcc7da285c967ddb758df98403",
+  "description": "Get OTK Version",
+  "policyName": "OTK Version DB GET",
+  "encassArgs": [],
+  "encassResults": [
+    {
+      "name": "otk_version.queryresult.count",
+      "type": "INTEGER"
+    },
+    {
+      "name": "otk_version.version",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

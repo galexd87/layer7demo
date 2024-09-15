@@ -1,0 +1,45 @@
+{
+  "goid": "c0e51b62151c23e2d21ecaf1117c2f7a",
+  "guid": "1412363c-9094-4640-9335-254bc3c8e317",
+  "name": "OTK openid jwks_endpoint Configuration",
+  "checksum": "d57cf0d0c26ace1753c170b6ad6e6283bfd33117",
+  "description": "Supported Json Web Keys as specified in the context of OpenID Connect. Defined for the OpenID Connect JWKS api",
+  "policyName": "OTK openid jwks_endpoint Configuration",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "jwks",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

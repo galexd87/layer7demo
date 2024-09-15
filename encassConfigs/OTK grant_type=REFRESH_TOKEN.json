@@ -1,0 +1,154 @@
+{
+  "goid": "3f6b5c92ca2ac3665bc7d8780bc4d7c8",
+  "guid": "3fa4307f-dd31-4cf6-88cd-3fd5e68341c8",
+  "name": "OTK grant_type=REFRESH_TOKEN",
+  "checksum": "9bf1c96e54c99bea8e0ca88ad76bd200513eb8bc",
+  "description": "Handles the OAuth grant_type=refresh_token. Validates a given refresh_token and sets the resource_owner and the valid SCOPE.",
+  "policyName": "OTK grant_type=REFRESH_TOKEN",
+  "encassArgs": [
+    {
+      "name": "at_lifetime",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Access Token Lifetime"
+    },
+    {
+      "name": "at_token",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Access Token"
+    },
+    {
+      "name": "client_key",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Client ID"
+    },
+    {
+      "name": "client_key_custom",
+      "type": "STRING",
+      "ordinal": 11,
+      "guiPrompt": false
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 9,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "mac_secret",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "MAC Token Secret"
+    },
+    {
+      "name": "resource",
+      "type": "STRING",
+      "ordinal": 10,
+      "guiPrompt": true,
+      "guiLabel": "resource"
+    },
+    {
+      "name": "rexpiration_new",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "Refresh Expiration (new)"
+    },
+    {
+      "name": "rtoken",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Refresh Token (old)"
+    },
+    {
+      "name": "rtoken_new",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Refresh Token (new)"
+    },
+    {
+      "name": "scope.requested",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Requested SCOPE"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "clientResponse",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "original_grant_type",
+      "type": "STRING"
+    },
+    {
+      "name": "owner",
+      "type": "STRING"
+    },
+    {
+      "name": "resource.granted",
+      "type": "STRING"
+    },
+    {
+      "name": "rexpiration",
+      "type": "STRING"
+    },
+    {
+      "name": "rtoken",
+      "type": "STRING"
+    },
+    {
+      "name": "scope.granted",
+      "type": "STRING"
+    },
+    {
+      "name": "token_secret",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "OAuth_Validation"
+    },
+    {
+      "name": "doc_usage",
+      "value": "Internal"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

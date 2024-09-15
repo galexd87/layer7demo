@@ -1,0 +1,51 @@
+{
+  "goid": "c9275751aad63a0a091d27e4e5f6434c",
+  "guid": "b1324b61-1d6f-4dc9-a355-32e6b64d9f34",
+  "name": "OTK Create Hash",
+  "checksum": "0c189e55cc9edca91abac7a31a0140bc1d10ae3f",
+  "description": "Create Hash",
+  "policyName": "OTK Create Hash",
+  "encassArgs": [
+    {
+      "name": "algorithm",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "algorithm"
+    },
+    {
+      "name": "inputPlaintext",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "inputPlaintext"
+    },
+    {
+      "name": "salt",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "salt"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "hashedValue",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

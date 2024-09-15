@@ -1,0 +1,141 @@
+{
+  "goid": "2764c2c12001775ce1e644cc4f477e6e",
+  "guid": "8f9785e7-43f0-48ee-96cd-f2275d7048eb",
+  "name": "OTK Authorize JWT Request Validation",
+  "checksum": "035d8f19982daf806c4f26d4952c675d4f6f8824",
+  "description": "Validate and export claims in the authorize JWT request",
+  "policyName": "OTK Authorize JWT Request Validation",
+  "encassArgs": [
+    {
+      "name": "authorizeRequestPayload",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "JWT Request Payload"
+    },
+    {
+      "name": "authzreq",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": false
+    },
+    {
+      "name": "clientId",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Client Id"
+    },
+    {
+      "name": "oauth2_profile",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": false
+    },
+    {
+      "name": "oauth_server_url",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": false
+    },
+    {
+      "name": "responseType",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Response Type"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "acr_values",
+      "type": "STRING"
+    },
+    {
+      "name": "acr_values_essential",
+      "type": "STRING"
+    },
+    {
+      "name": "client_id",
+      "type": "STRING"
+    },
+    {
+      "name": "codeChallenge",
+      "type": "STRING"
+    },
+    {
+      "name": "codeChallengeMethod",
+      "type": "STRING"
+    },
+    {
+      "name": "display",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "id_token_hint",
+      "type": "STRING"
+    },
+    {
+      "name": "login_hint",
+      "type": "STRING"
+    },
+    {
+      "name": "maxAge",
+      "type": "STRING"
+    },
+    {
+      "name": "nonce",
+      "type": "STRING"
+    },
+    {
+      "name": "prompt",
+      "type": "STRING"
+    },
+    {
+      "name": "redirect_uri",
+      "type": "STRING"
+    },
+    {
+      "name": "resourceOriginal",
+      "type": "STRING"
+    },
+    {
+      "name": "response_mode",
+      "type": "STRING"
+    },
+    {
+      "name": "response_mode_original",
+      "type": "STRING"
+    },
+    {
+      "name": "response_type",
+      "type": "STRING"
+    },
+    {
+      "name": "scopeOriginal",
+      "type": "STRING"
+    },
+    {
+      "name": "state",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

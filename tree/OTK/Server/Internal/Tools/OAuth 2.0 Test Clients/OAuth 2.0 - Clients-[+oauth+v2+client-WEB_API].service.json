@@ -1,0 +1,22 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fe7bc",
+  "guid": "4d99e253-cee0-47f8-a7ce-a6c91c27637a",
+  "name": "OAuth 2.0 - Clients",
+  "resolutionPath": "/oauth/v2/client",
+  "serviceType": "WEB_API",
+  "checksum": "8cb62c1728bcfe79e8c86caf8bde9446218e2207",
+  "enabled": true,
+  "folderPath": "/OTK/Server/Internal/Tools/OAuth 2.0 Test Clients",
+  "methodsAllowed": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE"
+  ],
+  "tracingEnabled": false,
+  "wssProcessingEnabled": false,
+  "laxResolution": false,
+  "policy": {
+    "xml": "<wsp:Policy xmlns:L7p=\"http://www.layer7tech.com/ws/policy\" xmlns:wsp=\"http://schemas.xmlsoap.org/ws/2002/12/policy\">\n    <wsp:All wsp:Usage=\"Required\">\n        <L7p:CommentAssertion>\n            <L7p:Comment stringValue=\"Redirect to the client overview page\"/>\n        </L7p:CommentAssertion>\n        <L7p:Include>\n            <L7p:PolicyGuid stringValue=\"9f29a8bd-912e-40a5-a48c-3b6f8aa40ac6\"/>\n            <L7p:PolicyName stringValue=\"OTK Security Header Extension\"/>\n        </L7p:Include>\n        <wsp:All wsp:Usage=\"Required\">\n            <L7p:AddHeader>\n                <L7p:AssertionComment assertionComment=\"included\">\n                    <L7p:Properties mapValue=\"included\">\n                        <L7p:entry>\n                            <L7p:key stringValue=\"LEFT.COMMENT\"/>\n                            <L7p:value stringValue=\"HTTPS only\"/>\n                        </L7p:entry>\n                        <L7p:entry>\n                            <L7p:key stringValue=\"RIGHT.COMMENT\"/>\n                            <L7p:value stringValue=\"Inform the browser to only accept SSL connections\"/>\n                        </L7p:entry>\n                    </L7p:Properties>\n                </L7p:AssertionComment>\n                <L7p:HeaderName stringValue=\"Content-Security-Policy\"/>\n                <L7p:HeaderValue stringValue=\"default-src 'self'; script-src 'unsafe-inline'; img-src * data:; style-src 'unsafe-inline'; font-src * data:; require-trusted-types-for 'script'; object-src 'none';\"/>\n                <L7p:RemoveExisting booleanValue=\"true\"/>\n                <L7p:Target target=\"RESPONSE\"/>\n            </L7p:AddHeader>\n            <L7p:assertionComment>\n                <L7p:Properties mapValue=\"included\">\n                    <L7p:entry>\n                        <L7p:key stringValue=\"LEFT.COMMENT\"/>\n                        <L7p:value stringValue=\"Override OTK Security Header Extension\"/>\n                    </L7p:entry>\n                </L7p:Properties>\n            </L7p:assertionComment>\n        </wsp:All>\n        <L7p:Encapsulated>\n            <L7p:EncapsulatedAssertionConfigGuid stringValue=\"51740c0b-11c5-455e-92a0-a1f915264eb0\"/>\n            <L7p:EncapsulatedAssertionConfigName stringValue=\"OTK Client Context Variables\"/>\n        </L7p:Encapsulated>\n        <L7p:SetVariable>\n            <L7p:Base64Expression stringValue=\"JHtsb2NhdGlvbl9hcHB9L2F1dGhjb2Rl\"/>\n            <L7p:VariableToSet stringValue=\"location\"/>\n        </L7p:SetVariable>\n        <L7p:HardcodedResponse>\n            <L7p:AssertionComment assertionComment=\"included\">\n                <L7p:Properties mapValue=\"included\">\n                    <L7p:entry>\n                        <L7p:key stringValue=\"LEFT.COMMENT\"/>\n                        <L7p:value stringValue=\"302\"/>\n                    </L7p:entry>\n                </L7p:Properties>\n            </L7p:AssertionComment>\n            <L7p:ResponseContentType stringValue=\"text/html;charset=UTF-8\"/>\n            <L7p:ResponseStatus stringValue=\"302\"/>\n        </L7p:HardcodedResponse>\n        <L7p:AddHeader>\n            <L7p:HeaderName stringValue=\"Location\"/>\n            <L7p:HeaderValue stringValue=\"${location}\"/>\n            <L7p:RemoveExisting booleanValue=\"true\"/>\n            <L7p:Target target=\"RESPONSE\"/>\n        </L7p:AddHeader>\n    </wsp:All>\n</wsp:Policy>"
+  }
+}

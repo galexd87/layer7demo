@@ -1,0 +1,65 @@
+{
+  "goid": "3c12d30b4f9d9293d5fb9a7fbf71eb84",
+  "guid": "2905aa52-5637-4781-ab87-56e15f2aed41",
+  "name": "OTK CIBA Update User Authentication Status",
+  "checksum": "e10bb28d50254c5b4fafcdae80696d53483e8cf9",
+  "policyName": "OTK CIBA Update User Authentication Status",
+  "encassArgs": [
+    {
+      "name": "auth_time",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Authentication Time"
+    },
+    {
+      "name": "status",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Status (ACCEPTED|REJECTED)"
+    },
+    {
+      "name": "user_info",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "(Optional) Additional User Info"
+    },
+    {
+      "name": "user_req_id",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "User Request Id"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_mesage",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

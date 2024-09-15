@@ -1,0 +1,61 @@
+{
+  "goid": "c0e51b62151c23e2d21ecaf1117c67e1",
+  "guid": "9ffb9846-c8a7-4284-826d-7e0b668514cc",
+  "name": "OTK openid userinfo_endpoint",
+  "checksum": "b73e033bea52f49d0628fc9e3c2c7ca3423aa1fe",
+  "description": "Supported userinfo endpoint as specified in the context of OpenID Connect. Defined for the OpenID Connect Discovery api.\nIt requires 'host_oauth2_auth_server' and 'userinfo_oauth' as input",
+  "policyName": "OTK openid userinfo_endpoint",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "host_oauth2_auth_server",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "userinfo_path",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "discovery.endpoint.enabled",
+      "type": "STRING"
+    },
+    {
+      "name": "userinfo_endpoint",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

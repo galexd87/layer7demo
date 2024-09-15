@@ -1,0 +1,53 @@
+{
+  "goid": "4ce85906c38aaeabd23b4c9fc34543f6",
+  "guid": "9c5ec6c1-0e34-4f5d-bb7d-ead9fa749290",
+  "name": "OTK Token DB Read (ciba)",
+  "checksum": "fd2c9b2d5db6520b9f2e5e9676beec6eb982fc07",
+  "policyName": "OTK Token DB Read (ciba)",
+  "encassArgs": [
+    {
+      "name": "auth_req_id",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    },
+    {
+      "name": "format",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "Save16.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "goid": "35f5ccf02323692c2c4a2f0545010a90",
+  "guid": "e1375d51-4432-49a9-876f-9f45f15c5756",
+  "name": "OTK v2GenerateRequestMac",
+  "checksum": "0ecf8f47e660053f1998ee9a8c650968948b1bb8",
+  "description": "Generates request MAC using HMAC-SHA1 algorithm",
+  "policyName": "OTK v2GenerateRequestMac",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "ext",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "http_method",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    },
+    {
+      "name": "mac_algorithm",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false
+    },
+    {
+      "name": "mac_key",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": false
+    },
+    {
+      "name": "nonce",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": false
+    },
+    {
+      "name": "timestamp_sec",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": false
+    },
+    {
+      "name": "url",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "mac",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

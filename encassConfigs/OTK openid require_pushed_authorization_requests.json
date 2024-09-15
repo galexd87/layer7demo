@@ -1,0 +1,48 @@
+{
+  "goid": "4ddfa454f4df41fbf734f3653ed32562",
+  "guid": "2c24688c-9f1e-4523-b7da-819dfc388b1a",
+  "name": "OTK openid require_pushed_authorization_requests",
+  "checksum": "0460a7e863cabb1427e23c62c9b4a83006d08e2c",
+  "description": "Sets  variable require_pushed_authorization_requests that indicates whether the authorization server accepts authorization request data only via PAR",
+  "policyName": "OTK openid require_pushed_authorization_requests",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "discovery.endpoint.enabled",
+      "type": "STRING"
+    },
+    {
+      "name": "require_pushed_authorization_requests",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "oauth.png"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

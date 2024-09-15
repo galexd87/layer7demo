@@ -1,0 +1,65 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fda9a",
+  "guid": "7e2b4f64-e226-4a03-980a-c4603163acc0",
+  "name": "OTK OVP Configuration",
+  "checksum": "52fbceb7ea6af50cd2b51356bad5613eb56cb7ee",
+  "description": "Exports the server location that implements the OVP (OAuth Validation Point) endpoints.",
+  "policyName": "OTK OVP Configuration",
+  "encassArgs": [
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "access_token_enable_jwt",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "host_oauth_ovp_server",
+      "type": "STRING"
+    },
+    {
+      "name": "reuse_refresh_expiration",
+      "type": "STRING"
+    },
+    {
+      "name": "reuse_refresh_token",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Access"
+    },
+    {
+      "name": "doc_usage",
+      "value": "Internal"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "ServerRegistry.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

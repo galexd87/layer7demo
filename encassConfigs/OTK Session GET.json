@@ -1,0 +1,82 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fdaba",
+  "guid": "4e4bc164-3fa2-4b15-ba65-31cef45b84b0",
+  "name": "OTK Session GET",
+  "checksum": "866d38eb06d358c257d5da7becc5fceea693ccf5",
+  "description": "Retrieve session values from the database. The result has to be URL decoded.",
+  "policyName": "OTK Session - Get",
+  "encassArgs": [
+    {
+      "name": "cacheAge",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Max. age for cache values"
+    },
+    {
+      "name": "cacheId",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Name of cache to be used"
+    },
+    {
+      "name": "cacheKey",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Key for cache entry"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Delegate"
+    },
+    {
+      "name": "doc_require_customization",
+      "value": "false"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "up-button.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

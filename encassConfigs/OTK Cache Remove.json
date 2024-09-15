@@ -1,0 +1,84 @@
+{
+  "goid": "161861da3a78c5dcdc62696d16914c2d",
+  "guid": "e5787b1a-e832-4cd9-9017-c7620e575b02",
+  "name": "OTK Cache Remove",
+  "checksum": "a8c0e519c14cc3e46512c35ba9946b4d777705cd",
+  "description": "Removes an item with key: cacheKey from cache with ID:  cacheID",
+  "policyName": "OTK Cache Remove",
+  "encassArgs": [
+    {
+      "name": "cacheID",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "The Cache ID (required)"
+    },
+    {
+      "name": "cacheKey",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "The Cache Key (identifier) for this entry (required)"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "maxEntries",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Max. number of entries for this cache (optional if a default value exists)"
+    },
+    {
+      "name": "maxEntryAge",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Max. entry age in seconds (optional if a default value exists)"
+    },
+    {
+      "name": "maxEntrySize",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Max. size for each entry (optional if a default value exists)"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "error.msg",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "customAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "Delete16.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "goid": "f08f82f9bbc839337544c3b319f04d95",
+  "guid": "df04db76-9431-40b2-872f-dd0ab9727d19",
+  "name": "OTK Session Tracking",
+  "checksum": "1870660c4f7636cfbc06029fee02d84d90ed05ff",
+  "description": "Takes JSON object to place them in the custom content for oauth sessions",
+  "policyName": "OTK Session Tracking",
+  "encassArgs": [
+    {
+      "name": "clientkey",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "JSON for ClientKey (Cient_id) specific values"
+    },
+    {
+      "name": "current_input",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "Current values"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "mTLS_certificate_thumbprint",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": false
+    },
+    {
+      "name": "mag",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "JSON for MAG specific values"
+    },
+    {
+      "name": "otk",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "JSON for OTK specific values"
+    },
+    {
+      "name": "portal",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "JSON for Portal specific values"
+    },
+    {
+      "name": "token_rank",
+      "type": "INTEGER",
+      "ordinal": 8,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "clientkey",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "mag",
+      "type": "STRING"
+    },
+    {
+      "name": "otk",
+      "type": "STRING"
+    },
+    {
+      "name": "portal",
+      "type": "STRING"
+    },
+    {
+      "name": "session_output",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_usage",
+      "value": "Internal"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "ServerRegistry.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

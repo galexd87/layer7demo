@@ -1,0 +1,85 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fce3a",
+  "guid": "760bfca6-c7f3-462d-a041-084e80f00271",
+  "name": "OTK id_token DB Remove",
+  "checksum": "30bc9f65125fed5a1a98a3cbd1e75c03332c32d0",
+  "description": "Removes the given id_token. This is equal to a user logout since client apps are not able to use that id_token anymore to request access_token. id_token will be selected by either (jwt) or (azp). (logout_apps) will either also delete associated acces_token or not.",
+  "policyName": "OTK id_token DB Remove",
+  "encassArgs": [
+    {
+      "name": "azp",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": false
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": false,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "jwt",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": false
+    },
+    {
+      "name": "logout_apps",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": false
+    },
+    {
+      "name": "separate_schemas",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": false
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "result",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Storage_Access"
+    },
+    {
+      "name": "doc_usage",
+      "value": "Internal"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "Save16.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}

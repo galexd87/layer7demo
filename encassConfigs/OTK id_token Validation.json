@@ -1,0 +1,114 @@
+{
+  "goid": "e001cfd0c1c1ffaa18e187b5e72fd2b4",
+  "guid": "f330bc51-c1fb-44bd-a07a-93baf86adad2",
+  "name": "OTK id_token Validation",
+  "checksum": "9fbadfaf12ddcd242877c839f9cfdf19f8f431e5",
+  "description": "Validates a given id_token. If 'check expiration' is set to 'false' the expiration date will only be exported but not validated.",
+  "policyName": "OTK id_token Validation",
+  "encassArgs": [
+    {
+      "name": "azp",
+      "type": "STRING",
+      "ordinal": 5,
+      "guiPrompt": true,
+      "guiLabel": "Valid Users (azp)"
+    },
+    {
+      "name": "check_expiration",
+      "type": "STRING",
+      "ordinal": 3,
+      "guiPrompt": true,
+      "guiLabel": "Check Expiration?"
+    },
+    {
+      "name": "custom",
+      "type": "STRING",
+      "ordinal": 8,
+      "guiPrompt": true,
+      "guiLabel": "Custom"
+    },
+    {
+      "name": "jwt",
+      "type": "STRING",
+      "ordinal": 1,
+      "guiPrompt": true,
+      "guiLabel": "JWT"
+    },
+    {
+      "name": "resource_owner",
+      "type": "STRING",
+      "ordinal": 4,
+      "guiPrompt": true,
+      "guiLabel": "Resource_Owner"
+    },
+    {
+      "name": "salt",
+      "type": "STRING",
+      "ordinal": 6,
+      "guiPrompt": true,
+      "guiLabel": "salt"
+    },
+    {
+      "name": "shared_secret",
+      "type": "STRING",
+      "ordinal": 2,
+      "guiPrompt": true,
+      "guiLabel": "Shared Secret"
+    },
+    {
+      "name": "shared_secret_alg",
+      "type": "STRING",
+      "ordinal": 7,
+      "guiPrompt": true,
+      "guiLabel": "Shared Secret Algorithm"
+    }
+  ],
+  "encassResults": [
+    {
+      "name": "content-type",
+      "type": "STRING"
+    },
+    {
+      "name": "custom_data",
+      "type": "STRING"
+    },
+    {
+      "name": "error.code",
+      "type": "STRING"
+    },
+    {
+      "name": "may_act_claim",
+      "type": "STRING"
+    },
+    {
+      "name": "resp",
+      "type": "MESSAGE"
+    },
+    {
+      "name": "status",
+      "type": "STRING"
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowTracing",
+      "value": "true"
+    },
+    {
+      "name": "doc_category",
+      "value": "Validation"
+    },
+    {
+      "name": "paletteFolder",
+      "value": "internalAssertions"
+    },
+    {
+      "name": "paletteIconResourceName",
+      "value": "validate.gif"
+    },
+    {
+      "name": "passMetricsToParent",
+      "value": "false"
+    }
+  ]
+}
